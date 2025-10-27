@@ -1,7 +1,7 @@
 +++
 title = "Home Server: Network"
 date = 2025-10-19
-updated = 2025-10-23
+updated = 2025-10-27
 external_links_target_blank = true
 [extra]
 featured = true
@@ -79,19 +79,19 @@ A bigger concern than advertisers, though, is my ISP. While I can't hide everyth
 [Pi-hole](https://pi-hole.net/) is the de-facto standard in DNS filtering (e.g., ad/tracking blocking). It maintains a large list of blocking rules which are applied every time a device makes a request for a given domain. If that domain, e.g. `tracking.corp.net`, is in the blocklist, the domain isn't resolved. Although it can't block paywalls or YouTube ads, it still provides at least a baseline level of filtering. I run [Pi-hole via Docker](https://docs.pi-hole.net/docker/) on my home server.
 
 <details>
-<summary>I also use the Pi-hole for DHCP.</summary>
+<summary>Resolving client names in Pi-hole</summary>
 <p>
-I'm still undecided on this in the long-term, but I haven't found it limiting for my use cases. It's fast, easy to configure, and means I can separate leases from my router.
+If you're not using the Pi-hole as a DHCP server, you will need to **enable Conditional Forwarding on the Pi-hole** to allow it to resolve client names on the network rather than seeing client IPs.
 
-<b>The downside:</b> if my server is down, clients have a hard time connecting!
+You should set this to your router's CIDR range and IP, like `true,192.168.1.1/24,192.168.1.1`.
 </details>
 
 <details>
-<summary>Fix: all requests to Pi-hole appear to come from the router</summary>
+<summary>Fix: devices still sometimes use the router DNS</summary>
 <p>
-Despite <a href="https://discourse.pi-hole.net/t/why-do-i-only-see-my-routers-ip-address-instead-of-individual-devices-in-the-top-clients-section-and-query-log/3653" target="_blank">configuring the basics</a> setting LAN > DHCP DNS to the Pi-hole, and disabling <q>Advertise router's IP in addition to user-specified DNS</q>, the top client according to the Pi-hole dashboard was the Asus router itself. Even when setting clients to use the Pi-hole's IP directly for DNS, somehow they would still appear to be forwarded by the Asus Router.
+Despite <a href="https://discourse.pi-hole.net/t/why-do-i-only-see-my-routers-ip-address-instead-of-individual-devices-in-the-top-clients-section-and-query-log/3653" target="_blank">configuring the basics like</a> setting LAN > DHCP DNS to the Pi-hole, and disabling <q>Advertise router's IP in addition to user-specified DNS</q>, DNS leak tests still showed that devices were still sometimes using the router-specified WAN DNS.
 
-The fix for me was to explicitly set the WAN > DNS setting to something that isn't the Pi-hole. I previously had nothing selected, which I suspect caused the router to fall back to the DHCP DNS. Why this *also* caused it to forward DNS requests I do not know, but **setting a different WAN DNS like `9.9.9.9`** immediately fixed the issue.</details>
+The issue was that I had used a DNS preset in the WAN settings **which applied both a primary and secondary DNS**, whereas the Pi-hole was set only as DNS 1 in LAN. Even with "advertise router IP" disabled, the secondary DNS in WAN seemed to get passed to clients.</details>
 
 **Maybe more valuable than blocking by-default, it gives visibility into what is happening on my network**; I sleep easier at night knowing I can review exactly where (and how often) devices on my network are reaching out, and that I'm empowered to block that if I like.
 
