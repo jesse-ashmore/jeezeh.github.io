@@ -2,7 +2,8 @@
   font-family: "Berkeley Mono", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial;
 
-  color: #333;
+  --text-primary: #333;
+  --text-secondary: #666;
   --color-primary: #8b6060;
   --color-accent: #608b8b;
 }
@@ -11,6 +12,8 @@ body {
   margin: 0;
   padding: 1rem;
   background: #fff;
+  width: 800px;
+  color: var(--text-primary);
 }
 
 h1,
@@ -30,17 +33,32 @@ a {
 header {
   margin-bottom: 2rem;
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 6fr 5fr;
 
   > hgroup {
-    margin-right: 1rem;
+    margin-right: 2rem;
     border-right: var(--color-accent) 2px solid;
+
+    > :nth-child(2) {
+      color: var(--text-secondary);
+      font-style: italic;
+    }
   }
 }
 
 .two-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.three-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .flex {
@@ -56,10 +74,20 @@ header {
 
   > :nth-child(1) {
     font-weight: bold;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
   }
 
   > :nth-child(2) {
     margin: 0;
+  }
+}
+
+.headed-list {
+  h4 {
+    color: var(--text-secondary);
+  }
+
+  li {
+    margin-bottom: 0.5rem;
   }
 }
