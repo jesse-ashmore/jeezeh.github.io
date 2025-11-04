@@ -2,27 +2,59 @@
   font-family: "Berkeley Mono", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial;
 
-  --text-primary: #333;
-  --text-secondary: #666;
-  --color-primary: #8b6060;
-  --color-accent: #608b8b;
+  --text-primary-rgb: 51, 51, 51;
+  --text-secondary-rgb: 102, 102, 102;
+  --color-primary-rgb: 117, 75, 75;
+  --color-accent-rgb: 68, 90, 90;
+
+  --text-primary: rgb(var(--text-primary-rgb));
+  --text-secondary: rgb(var(--text-secondary-rgb));
+  --color-primary: rgb(var(--color-primary-rgb));
+  --color-accent: rgb(var(--color-accent-rgb));
 }
 html,
 body {
   margin: 0;
   padding: 1rem;
   background: #fff;
-  width: 800px;
+  width: 960px;
   color: var(--text-primary);
 }
 
+body {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  @media print {
+    html,
+    body {
+      width: 210mm;
+      height: 297mm;
+    }
+    .page {
+      margin: 0;
+      border: initial;
+      border-radius: initial;
+      width: initial;
+      min-height: initial;
+      box-shadow: initial;
+      background: initial;
+      page-break-after: always;
+    }
+  }
+}
+
 h1,
-h2,
+h2 {
+  color: var(--text-primary);
+}
+
 h3,
 h4,
 h5,
 h6 {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 a {
@@ -30,19 +62,56 @@ a {
   text-decoration: dotted underline;
 }
 
+.left-border {
+  border-left: rgba(var(--text-secondary-rgb), 0.5) 2.5px solid;
+  padding-left: 1.5rem;
+}
+
 header {
   margin-bottom: 2rem;
   display: grid;
   grid-template-columns: 6fr 5fr;
 
-  > hgroup {
-    margin-right: 2rem;
-    border-right: var(--color-accent) 2px solid;
+  .kv-pair {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
 
-    > :nth-child(2) {
-      color: var(--text-secondary);
-      font-style: italic;
+    > h4 {
+      margin: 0;
     }
+  }
+
+  > hgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    > h1,
+    p {
+      margin: 0;
+    }
+
+    > h1 {
+      font-size: xxx-large;
+      color: var(--color-primary);
+    }
+
+    > p {
+      font-size: larger;
+    }
+  }
+}
+
+hgroup,
+hgroup::before {
+  /* padding: 0 1.5rem; */
+
+  > :nth-child(2) {
+    color: var(--text-secondary);
+    font-style: italic;
   }
 }
 
@@ -83,11 +152,25 @@ header {
 }
 
 .headed-list {
+  padding-left: 1rem;
+
   h4 {
+    margin-bottom: 0rem;
+    padding-left: 1rem;
     color: var(--text-secondary);
+  }
+
+  ul {
+    padding-left: 1rem;
   }
 
   li {
     margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    list-style-type: none;
+  }
+
+  li .first-word {
+    font-weight: bold;
   }
 }

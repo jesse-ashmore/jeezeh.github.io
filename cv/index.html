@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Curriculum Vitae — Your Name</title>
+    <script defer src="main.js"></script>
+    <title>Curriculum Vitae — Jesse Ashmore</title>
   </head>
   <body>
     <header>
@@ -12,7 +13,7 @@
         <h1>Jesse Ashmore</h1>
         <p>
           Software Engineer with 5+ years of experience wrangling data, teams,
-          and UIs.
+          and UI
         </p>
       </hgroup>
       <section class="two-columns">
@@ -25,95 +26,107 @@
           <p><a href="www.linkedin.com/in/jesse-ashmore">jesse-ashmore</a></p>
         </hgroup>
         <hgroup class="kv-pair">
+          <h4>GitHub</h4>
+          <p><a href="https://github.com/JeeZeh" target="_blank">JeeZeh</a></p>
+        </hgroup>
+        <hgroup class="kv-pair">
           <h4>Website</h4>
           <p><a href="https://jesse.ie" target="_blank">jesse.ie</a></p>
         </hgroup>
       </section>
     </header>
     <section>
-      <hr />
       <h2>Experience</h2>
-      <hgroup class="kv-pair">
-        <h3>Amazon — Software Development Engineer II</h3>
-        <p>Dublin, Ireland (2019, 2020-2025)</p>
-      </hgroup>
-      <section class="headed-list">
-        <h4>Staff engineering</h4>
-        <ul>
-          <li>
-            Reduced cost-to-serve for new and existing front-end products across
-            an organization of 50+ engineers; proposed and drove strategy to
-            adopt a multi-tenant web framework, API access model, and shared
-            component library.
-          </li>
-          <li>
-            Drove software development best practices across the organization
-            through technical writing, presentations, and consultation (ADRs;
-            front-end engineering office hours; process adoption and
-            standardization).
-          </li>
-          <li>
-            Identified and remedied business goal visibility and communication
-            issues between leadership and ICs through standardization of
-            collection, review, and reporting processes.
-          </li>
-        </ul>
-      </section>
-      <section class="headed-list">
-        <h4>Technical leadership</h4>
-        <ul>
-          <li>Mentored 3 engineers through successful promotions to SDE2.</li>
-          <li>
-            Led design and productization of graph data system (<i
-              >Amazon Neptune</i
-            >; <i>API Gateway</i>) serving core incident response and management
-            teams for the Amazon E-commerce business.
-          </li>
-          <li>
-            Led multiple technical incident postmortems helping teams identify
-            and close software resiliency gaps.
-          </li>
-          <li>
-            Championed documentation as a first-class citizen through automated
-            schema generation and exploration tools.
-          </li>
-        </ul>
-      </section>
-    </section>
-
-    <section>
-      <hr />
-      <h2>Skills</h2>
-      <div class="skills">
+      <div>
+        <hgroup class="kv-pair left-border">
+          <h3>Amazon — Software Development Engineer II</h3>
+          <p>Dublin, Ireland (2019, 2020-2025)</p>
+        </hgroup>
         <section class="headed-list">
-          <h4>Languages</h4>
+          <h4>Staff Engineering</h4>
           <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>Rust</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>SQL</li>
-            <li>TinkerPop Gremlin</li>
+            <li>
+              Reduced cost-to-serve for new and existing front-end products
+              across an organization of 50+ engineers; proposed and drove
+              strategy to adopt a multi-tenant web framework, API access model,
+              and shared component library.
+            </li>
+            <li>
+              Drove software development best practices across the organization
+              through technical writing, presentations, and consultation (ADRs;
+              front-end engineering office hours; process adoption and
+              standardization).
+            </li>
+            <li>
+              Identified and remedied business goal visibility and communication
+              issues between leadership and ICs through standardization of
+              collection, review, and reporting processes.
+            </li>
           </ul>
         </section>
         <section class="headed-list">
-          <h4>Technologies and paradigms</h4>
+          <h4>Tech leadership and individual contribution</h4>
           <ul>
+            <li>Mentored 3 engineers through successful promotions to SDE2.</li>
+            <li>
+              Led design and productization of graph data system (<i
+                >Amazon Neptune</i
+              >; <i>API Gateway</i>) serving core incident response and
+              management teams for the Amazon E-commerce business.
+            </li>
+            <li>
+              Led multiple technical incident postmortems helping teams identify
+              and close software resiliency gaps.
+            </li>
+            <li>
+              Championed documentation as a first-class citizen of software,
+              process; built automated data schema generation, exploration, and
+              AI assistance tooling.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <section class="headed-list">
+          <hgroup>
+            <h3>Languages</h3>
+          </hgroup>
+          <ul class="left-border">
+            <li>Java</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Python</li>
+            <li>Rust</li>
+            <li>SQL</li>
+            <li>Gremlin Query Language</li>
+          </ul>
+        </section>
+        <section class="headed-list">
+          <hgroup>
+            <h3>Technologies and paradigms</h3>
+          </hgroup>
+          <ul class="left-border">
             <li>Infrastructure-as-Code (AWS CDK, CloudFormation)</li>
-            <li>CI/CD and monitoring (deployment pipelines, AWS CloudWatch)</li>
+            <li>
+              CI/CD and monitoring (deployment pipelines, AWS CloudWatch,
+              reliability best practices)
+            </li>
             <li>
               Unit and integration testing (JUnit, Pytest/unittest, Jest,
-              Cypress)
+              Cypress, Mock Service Worker)
             </li>
-            <li>Graph databases (Amazon Neptune)</li>
+            <li>Graph databases (Amazon Neptune, Apache TinkerPop)</li>
             <li>Data lakes (AWS Glue, Lake Formation, Athena, S3)</li>
+            <li>Time-series event systems (OpenSearch, SQS, SNS)</li>
           </ul>
         </section>
       </div>
     </section>
     <section>
-      <hr />
       <h2>Education</h2>
       <hgroup class="kv-pair">
         <b>
