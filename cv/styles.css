@@ -45,9 +45,8 @@ body {
   }
 }
 
-h1,
 h2 {
-  color: var(--text-primary);
+  color: var(--color-primary);
 }
 
 h3,
@@ -64,7 +63,7 @@ a {
 
 .left-border {
   border-left: rgba(var(--text-secondary-rgb), 0.5) 2.5px solid;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
 }
 
 header {
@@ -73,11 +72,14 @@ header {
   grid-template-columns: 6fr 5fr;
 
   .kv-pair {
-    padding: 1rem;
+    margin: 1rem;
+    padding-right: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: flex-end;
+
+    border-right: rgba(var(--text-secondary-rgb), 0.5) 2.5px solid;
 
     > h4 {
       margin: 0;
@@ -107,8 +109,6 @@ header {
 
 hgroup,
 hgroup::before {
-  /* padding: 0 1.5rem; */
-
   > :nth-child(2) {
     color: var(--text-secondary);
     font-style: italic;
@@ -128,6 +128,10 @@ hgroup::before {
 .skills {
   display: grid;
   grid-template-columns: 1fr 2fr;
+
+  h3 {
+    margin-top: 0rem;
+  }
 }
 
 .flex {
@@ -154,6 +158,7 @@ hgroup::before {
 .headed-list {
   padding-left: 1rem;
 
+  > h3,
   h4 {
     margin-bottom: 0rem;
     padding-left: 1rem;
@@ -165,12 +170,13 @@ hgroup::before {
   }
 
   li {
-    margin-bottom: 0.5rem;
-    padding-left: 1rem;
-    list-style-type: none;
+    margin-bottom: 0.3rem;
+    margin-left: 1rem;
+    list-style-type: square;
+    padding-left: 0.5rem;
   }
 
   li .first-word {
-    font-weight: bold;
+    /* font-weight: bold; */
   }
 }
