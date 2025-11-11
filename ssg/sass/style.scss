@@ -46,9 +46,11 @@
   text-align: left;
   border-radius: 20px;
   padding: 1rem;
+  // position: fixed;
+  // left: 2rem;
+  // bottom: 2rem;
   position: fixed;
-  left: 2rem;
-  bottom: 2rem;
+  margin-top: 2rem;
   z-index: 1;
 
   backdrop-filter: blur(20px);
@@ -60,7 +62,7 @@
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
-  animation: 0.33s fade-in-right;
+  animation: 0.25s fade-in-right;
 }
 
 @keyframes fade-in-right {

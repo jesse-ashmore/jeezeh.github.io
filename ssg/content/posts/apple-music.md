@@ -174,3 +174,19 @@ Plugged in, I ran `caffeinate -s -i -u` to keep it awake, and left Apple Music i
 
 - Last.fm and scrobbling
   - [Pano Scrobbler](https://github.com/kawaiiDango/pano-scrobbler)
+
+<!-- This makes the tooltip float and follow the mouse -->
+<!-- TODO: For mobile, make the tooltip a pop-up from the bottom of the screen -->
+<script>
+var tooltip = document.querySelectorAll('.tooltiptext');
+
+document.addEventListener('mousemove', fn, false);
+
+function fn(e) {
+  for (var i=tooltip.length; i--;) {
+      const bound = tooltip[i].getBoundingClientRect();
+      tooltip[i].style.left = `${e.clientX - (bound.width / 2)}px`;
+      tooltip[i].style.top = `${e.clientY}px`;
+  }
+}
+</script>
