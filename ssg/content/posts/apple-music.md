@@ -11,7 +11,9 @@ toc = true
 
 ---
 
-## How I listen
+Music and its collection and curation has been a fundamental constant in my life, but the way I've enjoyed the hobby has shifted throughout the years. In my early childhood, curation took the form of mixtapes created from live radio recordings. In my late childhood and early tweens, I used my daily mobile internet allowance of 50MB ([_for only €1!_](https://web.archive.org/web/20100410163535/http://www.vodafone.ie/vlive/internetmobile)) to download as many 64-128Kbps MP3s as I could, and burn them to CDs. In my teens, YouTube and streaming began to take hold — and then Spotify Free launched in Ireland. Since then, I've built a yearly collections of favourites in my `Starred YYYY` playlists — grandfathered in from Spotify's previous "Starred" feature — and more recently began <span class="tooltip">categorizing songs by songs by 'tags', feelings, and activities.
+<span class="tooltiptext fade-in-right"><b>It's a crime that music tagging is not the default way to build music collections.</b> Imagine if you could tag a song like `favourite`, `workout`, `great bassline`, etc. and build playlists and queues based on combinations of these!</p>
+</span></span>
 
 My listening habits are regular by most standards; commuting, exercising, and working all happen to a mostly passive background soundtrack across devices like my Android phone, Windows PC, and MacBooks (work and personal). At home, most evenings involve some sort of active listening through a system I've built up over the years:
 
@@ -26,12 +28,6 @@ My listening habits are regular by most standards; commuting, exercising, and wo
 The home server might be a surprise here, but why pay hundreds for a dedicated network streamer when I already own a server that could _theoretically_ do the same thing. More on this later.
 
 ### Collection and curation
-
-Music, and its collection and curation, has been a fundamental constant in my life. In my early childhood, curation took the form of mixtapes created from live radio recordings. In my tweens, I used my [daily allowance of 50MB of internet for only €1 (!)](https://web.archive.org/web/20100410163535/http://www.vodafone.ie/vlive/internetmobile) to download as many 128Kbps MP3s as I could and burn them to CDs. Since then, I've built a yearly collection of favourites in my `Starred YYYY` playlists — grandfathered from Spotify's "Starred" songs collection — and more recently began categorizing these into their own tag/vibe-based playlists.
-
-<aside>
-It's a crime that music tagging is not the default way to build and collect music. Imagine if you could tag a song like `favourite`, `workout`, `great bassline`, etc. and build playlists and queues based on combinations of these!
-</aside>
 
 Music curation and discovery is still important to me, but the way I listen has been slowly changing. Over this last year, I've found myself with a growing collection of physical media, enjoying a more intentional approach to listening and collecting. Playlists are still the backbone of most of my listening and discovery, but I've started to rediscover the joy in picking a single album (physical or digital) and listening from start to end. This was common as a child when my collection overwhelmingly comprised label-released CDs, but my obsession with playlisting born from the crazed media consumption of my teenage years won out in the long run.
 
