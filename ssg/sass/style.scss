@@ -38,29 +38,27 @@
 }
 
 .tooltiptext {
-  // font-style: italic;
+  display: inline-block;
   visibility: hidden;
   font-size: medium;
-  width: 20rem;
+  width: 400px;
   color: #564444;
   text-align: left;
   border-radius: 20px;
   padding: 1rem;
-  // position: fixed;
-  // left: 2rem;
-  // bottom: 2rem;
   position: fixed;
   margin-top: 2rem;
   z-index: 1;
 
-  backdrop-filter: blur(20px);
-  background-color: rgba(255, 255, 255, 0.33);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
   border: solid rgba(255, 255, 255, 0.8) 1px;
   box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.8),
     0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext,
+.tooltip:focus .tooltiptext {
   visibility: visible;
   animation: 0.25s fade-in-right;
 }

@@ -11,81 +11,95 @@ toc = true
 
 ---
 
-Music and its collection and curation has been a fundamental constant in my life, but the way I've enjoyed the hobby has changed throughout the years. In my early childhood, curating music meant recording tapes from live radio. In my late childhood and early tweens, I filled spindles upon spindles of CD-Rs with low-bitrate MP3s, downloading as many as I could within my [daily 50MB mobile internet limit](https://web.archive.org/web/20100410163535/http://www.vodafone.ie/vlive/internetmobile) or running out of patience; these were the 2G days, where a single 3MB MP3 could take upwards of 15 minutes to download. In my teens, YouTube and streaming began to take hold, and _Spotify Free_ finally launched in Ireland in 2013.
+<!-- Drop caps please -->
 
-Since 2013, my music organization process gradually became more granular. I _began_ (if you discount my original mixtapes and CDs) my playlisting journey by adding my favorite songs to a single _Starred_ list in Spotify. This was its original name for the Liked Songs list we have today. In 2016, this list started to become a bit unmanageable and even slow on some devices, so I started to batching my favorites by year (e.g. `Starred 2013, 2014, ...`). Fast forward nearly a decade, and I still batch my song by year, but I also sort much of my liked music into categories of various <span class="tooltip">'tags'<span class="tooltiptext fade-in-right"><b>It's a crime that music tagging is not the default way to build music collections.</b> Imagine if you could tag a song like `favourite`, `workout`, `great bassline`, etc. and build playlists and queues based on combinations of these!</span></span> (such as activity, emotion, instrumentation, and more). Suffice it to say, my process has always been hands-on, and I'm always willing to invest more time than the average person into organizing and shaping my music library.
+Music has been a fundamental constant in my life, but the way I've enjoyed the hobby has changed throughout the years. In my early childhood, I listened to a mix of my parents' collections. Soon, though, I started forming my own tastes and interested, informed heavily by movies, TV, games, and radio of that time. This is also around the time when I started _curating_ and collecting music, a process that would enshrine itself in my daily life for the next 20 years.
 
-My listening habits by comparison are mostly regular; commuting, exercising, and working all happen to backing track of shuffled songs. On my commute, I listen on my (Android) phone, and at work I listen on my Mac. At home, depending on the room and activity, I might be listening on my PC, MacBook Air or <q>home audio system</q> (I don't really know what to call it; it's not just a <q>Hi-Fi</q>, but it's also not really an <q>entertainment system</q> in itself.).
+In my late childhood and early tweens, I filled spindles of CD-Rs with low-bitrate MP3s, downloading as many as I could within my [50MB daily limit](https://web.archive.org/web/20100410163535/http://www.vodafone.ie/vlive/internetmobile), or until I ran out of patience; these were the 2G days, where a single 3MB MP3 could take upwards of 15 minutes to download. In my teens, YouTube and streaming began to take hold, and _Spotify Free_ finally launched in Ireland in [late 2012](https://irishtechnews.ie/spotify-goes-live-in-ireland/). Enter the _playlist_.
 
-- Wharfedale Evo 4.2 ('bookshelf' speakers; they do not fit on a bookshelf)
-- Audiolab a6000 (amplifier)
-- MiniDSP Flex (room correction for all inputs)
-- Shanling CR60 (CD Player, Transport, and Ripper)
-- HP Elitedesk 800 G3 Mini (home server running Ubuntu for streaming)
+## Spotify: discovery and curation
 
-<!-- TODO: Diagram -->
+<!-- Aside with quote? -->
 
-The home server might be a surprise here, but why pay hundreds for a dedicated network streamer when I already own a server that could _theoretically_ do the same thing. More on this later.
+Suddenly, the act of finding and acquiring music became automatic, with Spotify granting instant access to a practically infinite backlog (_and new releases_) of every genre imaginable. No longer was a single song or album getting weeks of airtime; songs would play back-to-back, and those essential favourites of my teenage years would enter my life, [permanently shaping my attitudes, emotions, and memories around it](https://archive.is/poojo). This was far too much content for CD-Rs, I needed something fast and flexible. Enter the playlist.
 
-### Collection and curation
+My playlisting habits were simple at first, just click the ⭐️ beside a song I liked, and it would go straight into my _Starred_ list in Spotify. After a few years, though, this single list started to bend and buckle, especially as my listening increased. So, I started to batching my favorites by year, creating separate `Stared YYYY` playlists at the beginning of each year for my collection to start anew. This was mostly an exercise in partitioning, with smaller playlists being easier to search and whose offline copy would take up lest storage. Fast forward nearly a decade, and I still batch my song by year, but now I also sort any relevant songs into categories of various <span class="tooltip" tabindex="0">'tags'<span class="tooltiptext fade-in-right"><b>It's a crime that music tagging is not the default way to build music collections.</b> Imagine if you could tag a song like `favourite`, `workout`, `great bassline`, etc. and build playlists and queues based on combinations of these!</span></span>, such as by activity, emotion, instrumentation, and more. Suffice it to say, my process has always been hands-on, and I'm willing to invest more time than the average person into organizing and shaping my music library.
 
-Music curation and discovery is still important to me, but the way I listen has been slowly changing. Over this last year, I've found myself with a growing collection of physical media, enjoying a more intentional approach to listening and collecting. Playlists are still the backbone of most of my listening and discovery, but I've started to rediscover the joy in picking a single album (physical or digital) and listening from start to end. This was common as a child when my collection overwhelmingly comprised label-released CDs, but my obsession with playlisting born from the crazed media consumption of my teenage years won out in the long run.
+<figure>
+{{ image(url="spotify-library.png", alt="My Spotify library ca. 2025", no_hover=true) }}
+<figcaption>My Spotify library ca. 2025</figcaption>
+</figure>
 
-From a curation perspective, Spotify is great for me. Over the years, my weekly ritual of funneling Discover Weekly + Release Radar favourites into various playlists organized by year, genre, vibes, and activities has left me with a rich and eclectic mix of music for all occasions. But Spotify is a playlist-first platform, and today as I reflect on what the _process of music listening means to me_, I find myself increasingly alienated by Spotify's pursuit of the algorithmic experience over a self-directed one. Recommended playlists, daily mixes, AI DJs, and more all fight for my attention, trying to pull me away from control and organization, and towards an endless stream and commodification of beats and vibes.
+## Intentionality in listening
 
-Something had to give. My Spotify Family Plan was nearing expiry, and given my recent shift in music habits along with mounting negative sentiment around the platform (low pay-outs, artists pulling their music, CEO investments, AI-heavy product direction), I decided it was time to look for an alternative.
+From a curation perspective, Spotify is great for me. My weekly ritual of funneling _Discover Weekly_ and _Release Radar_ favourites into my collection has left me with a rich and eclectic mix of music for all occasions. But Spotify is a playlist-first platform, and today as I reflect on what the _process of music listening means to me_, I find myself increasingly alienated by Spotify's pursuit of the algorithmic experience over a self-directed one. Recommended playlists, daily mixes, AI DJs, and more all fight for my attention, trying to pull me away from control and organization, and towards an endless stream and commodification of beats and vibes. I've also found myself with a [growing collection of physical media](https://www.discogs.com/user/JesseAsh/collection) over the last few years. Playlists are still the backbone of my listening and discovery process, but I've started to rediscover the joy and peace in picking a single album (physical or digital) and listening from start to end.
+
+This more recent shift towards intentionality has left me thinking more about how and from where I get my music. Mounting negative sentiment around Spotify for its low artist pay-outs, its CEO's investments, a AI-heavy product direction have driven some of my favourite artists to pull their music. Of course, this is an inconvenience to me, but that's the point: if they can risk their livlihood for a cause, then surely I can make a small sacrifice of convenience for the same. Besides, if I want to continue supporting them through streaming revenue, at least, I'm going to have to listen elsewhere.
+
+Coincidentally, my Spotify Family was also going through a Spotify Divorce, so it was finally time to look for an alternative to Spotify.
 
 ## Finding an alternative to Spotify
 
-These days, we are not poor for music streaming platforms, but there are compromises with each. I previously tried Tidal and Deezer, and found them fine, but besides offering lossless streaming in the earlier days I didn't feel like they were distinguished enough from Spotify to pull me away at the time. YouTube Music would be a good choice, especially as I watch a lot of YouTube, but tying more of world into the Google ecosystem seemed like a bad idea. Amazon Music seems promising too, but I've personally heard mixed reports on it as a platform so decided not to try it yet.
+We are not poor for music streaming platforms, there's almost _too many_ to choose from, but I had some <span class="tooltip" tabindex="0">criteria<span class="tooltiptext">I'm willing to compromise a bit on some of these. For example, Spotify generally meets these quite well, especially points 3 and 4. This is what kept me on the platform for so long.</span></span> to help guide my search. The next platform would need to:
 
-I finally landed on two platforms I was interested in: **Apple Music** — which a friend had recently migrated to from Spotify and was raving about — and **Qobuz**.
+1. Support my process of music discovery and curation
+2. Align with my own values and those of the artists I care about
+3. Have a large catalog so as to not lose the deeper cuts as I migrated my library
+4. Integrate well with all the ways I listen to music
+
+<aside>
+If you're thinking that having a device ecosystem spanning Linux, Windows, Android and Mac OS might make this difficult, you're right.
+</aside>
+
+Unsurprisingly, I listen to music on my phone during my commute, and on my work device at the office. At home, things get a little more involved depending on the room and activity. I might be listening on my PC while playing games, my MacBook Air while doing things like writing this post, or on my home audio system (including a Linux server as a network streamer/player) for more focused listening.
+
+<!-- - Wharfedale Evo 4.2 (bookshelf speakers; they do not fit on a bookshelf)
+- Audiolab a6000 (amplifier)
+- MiniDSP Flex (room correction for all inputs)
+- Shanling CR60 (CD player/transport and ripper for archiving)
+- HP Elitedesk 800 G3 Mini (home server) -->
+
+Based on my criteria, I landed on two platforms I was interested in trying: **Apple Music**—which [a good friend](https://maciej.ie/) had recently migrated to and has sung its praises for—and **Qobuz**.
+
+I would end up spending relatively little time with Qobuz before moving to Apple Music.
 
 ### Queue-buzz? Co-booze? Qobuz!
 
 Qobuz is interesting: branded as an audiophile streaming platform that promotes music ownership as a first-class citizen, I signed up for the trial. Things were good, until I found it lacked playlist folders. I have a lot of playlists, and organizing them by category is important to me, so having to settle for all playlists sitting in an endless list felt like a difficult pill to swallow. [Until recently](https://community.qobuz.com/press-en/qobuz-unveils-its-new-discover-page), Qobuz also lacked in the discovery department, with no clear analogy to Spotify's Discover Weekly and Release Radar playlists. These two main inconveniences were enough to push me away from Qobuz _for the time being_.
 
-In hindsight, and with the recently-added "Release watch" feature, my frustrations with Qobuz would **pale in comparison** to what Apple Music had in store for me. Before we move onto Apple Music, I do want to highlight Qobuz's potential to be a top-tier platform. The app experience was robust, lossless playback as a priority, inclusion of a duo plan for couples, and the best royalty rates for artists out of any other platform make Qobuz stand out as a strong contender, and something I will return to if Apple Music fails to win me over in the next few months.
+In hindsight, and with the recently-added "Release watch" feature, my frustrations with Qobuz would **pale in comparison** to what Apple Music had in store for me. Before we move onto Apple Music, though, I do want to highlight Qobuz's potential to be a top-tier platform. The app experience was robust, lossless playback as a priority, inclusion of a duo plan for couples, and the best royalty rates for artists out of any other platform make Qobuz stand out as a strong contender, and something I will return to if Apple Music fails to ~~keep me hostage~~ win me over in the next few months.
 
-# Apple Music
+## Apple Music
 
-Feeling a little disheartened from my initial Qobuz experience, I decided to research Apple Music. For whatever reason, I had assumed Apple Music was only available as a MacOS and iOS app, so I was was shocked to find that not only had they released a fresh Apple Music app for Windows, they also have an Android App — **a very good one at that**.
+Feeling a little disheartened from my initial Qobuz experience, I decided to research Apple Music. For whatever reason, I had assumed Apple Music was only available as a MacOS and iOS app, so I was was shocked to find that not only had they released a fresh Apple Music app for Windows, they also have an Android App, and _it's very good_.
 
-With the 3 month trial that came with my MacBook Air, I decided there was little to lose by trying out Apple Music. Fortunately, my time and sanity are worthless.
+With the 3 month trial that came with my MacBook Air, there was little to lose by it trying out. **Fortunately, my time and sanity are worthless**.
 
 ## A great first impression
 
-### The Android App
+Apple is generous enough to provide free access to Songshift, a playlist transfer service, for users moving to Apple Music. Within a few minutes I kicked off the process to move all my playlists, and by the next time I remembered to check on the app it had completed. Given some playlists had thousands of songs, the speed and accuracy of the migration was impressive. Although it didn't copy my folder structure it only took a few minutes of to create them by hand and get back to the same point I left from with Spotify.
 
-As mentioned, **the Android app is surprisingly good**. It's fast, looks gorgeous, and has most of the features I want from a portable music app. Overall performance is really great here, breezing through tens of thousands of tracks in my Library without a hitch. It also has pretty good feature parity with Apple devices, sometimes even getting new features like AutoMix first due to not being tied to iOS and macOS release cycles.
-
-<!-- Screenshot -->
-
-Although there are some limitations, such as not being able to create new _Smart Playlists_ from the app, it does at least support viewing and playing them.
-
-**Smart Playlists** are Apple Music's way of bridging the gap between a curated Library of music (the old-school iTunes kind) and playlists, allowing you to automatically populate songs from your library into a playlist matching a set criteria you provide. Want a playlist of your favorite Hip-hop and RnB music released between 2000 and 2005, you can do that.
-
-But how do you get to have such a massive library as a new Apple Music convert?
-
-### The Library
-
-Apple is gracious enough to provide free access to Songshift, a playlist-import service, for users moving to Apple Music. This quickly and efficiently moved over all my playlists, some of which had thousands of songs, with an impressive match rate. This was a great starting point, as I could bring over everything I had in Spotify. It didn't copy my folder structure, but **thankfully Apple Music supports playlist folders**, so it wa just a few minutes of manual effort to get back to the same point I left from with Spotify.
+This was a great first impression, and it would continue from there once I started exploring the Android app. It's fast, looks gorgeous, and has most of the features I want from a portable music app. It breezes through tens of thousands of tracks in my Library without a hitch. It also has pretty good feature parity with Apple devices, sometimes even getting new features like AutoMix first due to not being tied to iOS and macOS release cycles.
 
 <!-- Screenshot -->
+
+<!-- Although there are some limitations, such as not being able to create new _Smart Playlists_ from the app, it does at least support viewing and playing them. **Smart Playlists** are Apple Music's way of bridging the gap between a curated Library of music (the old-school iTunes kind) and playlists, allowing you to automatically populate songs from your library into a playlist matching a set criteria you provide. Want a playlist of your favorite Hip-hop and RnB music released between 2000 and 2005, you can do that. -->
 
 ## Bring your own music
 
-Apple Music's roots in iTunes, and their focus on music ownership, serves users with existing digital collections very well. From any desktop device (Windows or Mac), you can upload local files to your Apple Music account and have these available in your Library. This Excellent answer to Spotify's somewhat lackluster 'Local Files' feature, which requires you handle moving music across devices in your own way.
+Apple Music's roots in iTunes and their focus on music ownership serves users with existing digital collections very well. From any desktop device (Windows or Mac), you can upload local files to your Apple Music account and have these available in your Library. This is an excellent answer to Spotify's somewhat lackluster 'Local Files' feature, which is an opt-in feature and requires at least one computer to have a copy of the files on the same network for others to sync from.
 
-However, this is where I encountered my first obstacle in a string of many.
+Unfortunately, the import process for Apple Music is not perfect either
 
 {% alert(warning=true) %}
 From this point on, the post will turn into a bit of a trouble-shooting guide.
 {% end %}
 
-### ...as long as it's not FLAC
+### Alac of supported formats
 
-Unfortunately, despite being able to import local music in a variety of popular formats including MP3, **FLAC is not supported for imports**. This is unusual given their own, equivalent lossless ALAC format, and support for lossless WAV imports. In any case, I got around this by using [MediaHuman Audio Converter](https://www.mediahuman.com/audio-converter/), which thankfully supports both Windows and Mac, to quickly convert 50GB+ of FLACs to ALAC. Importing them was the next major hurdle.
+Despite being able to import local music in a variety of popular formats including MP3, **FLAC is not supported for imports**. This is unusual given support for their own, equivalent lossless ALAC format and others like WAV. In any case, I got around this by using [MediaHuman Audio Converter](https://www.mediahuman.com/audio-converter/), which thankfully supports both Windows and Mac, to quickly convert 50GB+ of FLACs to ALAC. You can also do this with `ffmpeg` directly, but I never figured out all the flags needed to preserve directory structures and metadata along the way.
+
+Once converted, it was time to import everthing.
 
 ### Importing a large collection of physical rips
 
