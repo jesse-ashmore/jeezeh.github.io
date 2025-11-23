@@ -1,16 +1,20 @@
 +++
 title = "From Spotify to Apple Music — every sharp edge"
 date = 2025-11-07
-part = 2
 external_links_target_blank = true
 [extra]
 featured = true
 toc = true
 +++
 
-> In this entry, I reflect on what music listening and curation means to me, and journal my experiences with moving from Spotify to Apple Music, documenting every sharp edge, incompatibility, and workaround I've discovered on the way.
+<div class="card">
+This is the second entry in a duology of posts covering my move from Spotify to Apple Music.
 
----
+[In the previous entry](/posts/apple-music-2), I detailed my process for music discovery and curation and reflect on what music as a hobby means to me.
+
+Here, I cover my journey of onboarding and adapting to Apple Music as a primarily non-Apple user. This entry is less reflective than the first, and serves as both documentation and a trouble-shooting guide for future users in a similar boat. **This will get technical.**
+
+</div>
 
 ## A great first impression
 
@@ -329,7 +333,6 @@ My goal with this post was firstly therapeutic. Each hurdle in my journey from S
 It's easy to think of all of this as just sunk-cost. Why not just go back to Spotify, a world where this post didn't even need to exist? Through the course of writing this diary entry/troubleshooting runbook, I've found some peace within the madness. There's purpose in spending time organizing my music, in making technology work the way I think it ought to, and in journaling my experiences.
 
 These are all deeply important parts of who I am, and now I feel like I know a little bit more about those parts.
-
 
 <!-- This makes the tooltip float and follow the mouse -->
 <!-- TODO: For mobile, make the tooltip a pop-up from the bottom of the screen -->
