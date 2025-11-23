@@ -20,11 +20,9 @@ Here, I cover my journey of onboarding and adapting to Apple Music as a primaril
 
 {{ image(url="android-transfer.jpg", alt="Apple Music (Android): Playlist transfer",  end=true, no_hover=true)}}
 
-Apple is generous enough to provide free access to SongShift (a playlist transfer service) for users moving to Apple Music. Within a few minutes I kicked off the process to move all my playlists, and by the next time I remembered to check on the app it had completed. Given some playlists had thousands of songs, the speed and accuracy of the migration was impressive.
+Let's get right into it by transferring my playlists from Spotify. Apple (like Qobuz) is generous enough to provide free access to SongShift for users moving their music from other platforms to Apple Music. Within a few minutes I kicked off the process to move all my playlists, and by the next time I remembered to check on the app it had completed. Given some playlists had thousands of songs, the speed and accuracy of the migration was impressive.
 
-Although it didn't copy my folder structure, it only took a few minutes to create them by hand and get back to the same point I left from with Spotify. This was a great first impression that would continue through the Android app.
-
-It's fast, looks gorgeous, and has most of the features I want from a portable music app. It breezes through tens of thousands of tracks in my Library without a hitch. It also has pretty good feature parity with Apple devices, sometimes even getting new features like AutoMix first due to not being tied to iOS and macOS release cycles.
+Although it didn't copy my folder structure, it only took a few minutes to create them by hand and get back to the same point I left from with Spotify. This was a great first impression that would continue through the Android app. It's fast, looks gorgeous, and has most of the features I want from a portable music app. It breezes through tens of thousands of tracks in my Library without a hitch. It also has pretty good feature parity with Apple devices, sometimes even getting new features like AutoMix first due to not being tied to iOS and macOS release cycles.
 
 ## Bring your own music
 
@@ -322,7 +320,9 @@ Use OBS to record your gameplay using NVENC encoder and the replay buffer [to mi
 - Action: Start a program
   - Program: `obs64.exe`
   - Start in: `"C:\Program Files\obs-studio\bin\64bit\"`
-  - Arguments: `--startreplaybuffer --minimize-to-tray` (to immediately start recording silently)
+  - Arguments:
+    - `--startreplaybuffer --minimize-to-tray` - starts OBS silently and immediately starts the replay buffer.
+    - `--disable-shutdown-check` prevents prompts for using _safe mode_ after previous unclean shutdowns, i.e. turning off the PC while replay buffer is running
 
 {% end %}
 
