@@ -18,7 +18,12 @@ Here, I cover my journey of onboarding and adapting to Apple Music as a primaril
 
 ## A great first impression
 
-{{ image(url="android-transfer.jpg", alt="Apple Music (Android): Playlist transfer",  end=true, no_hover=true)}}
+<figure>
+<aside>
+{{ image(url="android-transfer.jpg", alt="Apple Music (Android): Playlist transfer", no_hover=true)}}
+<figcaption>Apple Music (Android): Playlist transfer</figcaption>
+</figure>
+</aside>
 
 Let's get right into it by transferring my playlists from Spotify. Apple (like Qobuz) is generous enough to provide free access to SongShift for users moving their music from other platforms to Apple Music. Within a few minutes I kicked off the process to move all my playlists, and by the next time I remembered to check on the app it had completed. Given some playlists had thousands of songs, the speed and accuracy of the migration was impressive.
 
@@ -30,9 +35,6 @@ Apple Music's roots in iTunes and their focus on music ownership serves users wi
 
 Unfortunately, the import process for Apple Music is not perfect either.
 
-{% alert(note=true) %}
-From this point on, the post will turn into a bit of a trouble-shooting guide.
-{% end %}
 
 ### Alac of supported formats
 
@@ -68,7 +70,7 @@ Once converted, it was time to import everything. After importing my playlists a
 <figure>
 {{ image(url="apple-missing-songs.png", alt="An album in Apple Music with missing songs", no_hover=true)}}
 <figcaption>Missing uploads</figcaption>
-<figure>
+</figure>
 </aside>
 It seems with a large enough collection, the app will lose track (hah!) of certain songs during the upload/matching process, leave you with partial albums. After several attempts to re-upload the collection and even the missing songs individually, I couldn't get them to appear in my library.
 
@@ -80,7 +82,12 @@ What worked was to try and re-upload all my albums again from a different device
 
 A few days later, I opened my Starred 2025 playlist as usual. To my horror, all the songs I added to it since migrating from Spotify disappeared before my eyes. What just happened?! I saw them there, then it performed some sort of sync and everything recently added was removed. **This was my fault**, but it wasn't immediately obvious why.
 
-![](apple-library-add.jpg#no-hover#end)
+<figure>
+<aside>
+{{ image(url="apple-library-add.jpg", alt="Toggles to control 'Add to library' features", no_hover=true)}}
+<figcaption>Toggles to control 'Add to library' features</figcaption>
+</figure>
+</aside>
 Coming from Spotify, it's easy to assume the _library_ is just an arbitrary list of songs you might have "Liked" or added to playlists in the past. In fact, in Apple Music, there are settings to make the behavior feel identical to Spotify.
 
 {% alert(caution=true,text="hello") %}
