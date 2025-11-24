@@ -20,7 +20,7 @@ This is the first entry in a duology of posts covering my move from Spotify to A
 
 <!-- Drop caps please -->
 
-Music has been a fundamental constant in my life, but the way I've enjoyed the hobby has changed throughout the years. In my early childhood, I listened to a mix of my parents' collections: _AC/DC, Bruce Springsteen, Electric Light Orchestra, Macy Gray_; soon, though, I started forming my own tastes and interests informed heavily by movies, TV, games, and radio of that time. It was around this time when I started collecting music I enjoyed, and seeking out entirely _new_ music. These were the first sparks of _music curation_, a process that would enshrine itself in my daily life for the next 20 years.
+Music has always played a huge role in my life, but the way I've enjoyed it as a hobby has changed over the years. In my early childhood, I listened to a mix of my parents' collections: _AC/DC, Bruce Springsteen, Electric Light Orchestra, Macy Gray_; and soon, I started forming my own tastes and interests. It was around this time that I started collecting music I enjoyed, and seeking out entirely _new_ music. These were the first sparks of _music curation_, a process that would enshrine itself in my daily life for the next 20 years.
 
 ## Discovery and curation
 
@@ -38,9 +38,9 @@ Enter the playlist.
 
 My playlisting habits were simple at first: just click the `⭐️` beside a song I liked, and it would go straight into my _Starred_ list in Spotify.
 
-After a few years, though, this single list started to bend and buckle, especially as my listening increased. So, I started to batching my favorites by year, creating separate `Starred YYYY` playlists at the beginning of each year for my collection to start anew. This was mostly an exercise in partitioning, with smaller playlists being easier to search and whose offline copy would take up less storage.
+After a few years, though, this single list started to bend and buckle, especially as my listening increased. So, I started batching my favorites by year, creating separate `Starred YYYY` playlists at the beginning of each year for my collection to start anew. This was mostly an exercise in partitioning, with smaller playlists being easier to search and whose offline took up less storage.
 
-Fast forward nearly a decade, and I still batch my song by year, but now I also sort any relevant songs into categories of various <span class="tooltip" tabindex="0">'tags'<span class="tooltiptext fade-in-right"><b>It's a crime that music tagging is not the default way to build music collections.</b> Imagine if you could tag a song like `favourite`, `workout`, `great bassline`, etc. and build playlists and queues based on combinations of these!</span></span>, such as by activity, emotion, instrumentation, and more.
+Fast forward nearly a decade, and I still batch my song by year, but now I also sort songs into various categories or <span class="tooltip" tabindex="0">'tags'<span class="tooltiptext fade-in-right"><b>It's a crime that music tagging is not the default way to build music collections.</b> Imagine if you could tag a song like `favourite`, `workout`, `great bassline`, etc. and build playlists and queues based on combinations of these!</span></span>, such as by activity, emotion, instrumentation, and more.
 
 <figure>
 {{ image(url="spotify-library.png", alt="My Spotify library ca. 2025", no_hover=true) }}
@@ -53,9 +53,9 @@ Suffice it to say, my process has always been hands-on, and I'm willing to inves
 
 From a curation perspective, Spotify is great for me. My weekly ritual of funneling _Discover Weekly_ and _Release Radar_ favourites into my collection has left me with a rich and eclectic mix of music for all occasions. But Spotify is a playlist-first platform, and today as I reflect on what the _process of music listening means to me_, I find myself increasingly alienated by Spotify's pursuit of the algorithmic experience over a self-directed one.
 
-Recommended playlists, daily mixes, AI DJs, and more all fight for my attention, trying to pull me away from control and organization, and towards and endless stream of commodified beats and vibes. I've also found myself with a [growing collection of physical media](https://www.discogs.com/user/JesseAsh/collection) over the last few years. Playlists are still the backbone of my listening and discovery process, but I've started to rediscover the joy and peace in picking a single album (physical or digital) and listening from start to end.
+Recommended playlists, daily mixes, AI DJs, and more all fight for my attention, trying to pull me away from control and organization, and towards an endless stream of commodified beats and vibes. I've also found myself with a [growing collection of physical media](https://www.discogs.com/user/JesseAsh/collection) over the last few years. Playlists are still the backbone of my listening and discovery process, but I've started to rediscover the joy and peace in picking a single album (physical or digital) and listening from start to end.
 
-This more recent shift towards intentionality has left me thinking more about how and from where I get my music. Mounting negative sentiment around Spotify for its low artist payouts, its CEO's investments, a AI-heavy product direction have driven some of my favourite artists to pull their music. Of course, this is an inconvenience to me, but that's the point: if they can risk their livelihood for a cause, then surely I can make a small sacrifice of convenience for the same. Besides, if I want to continue supporting them through streaming revenue, at least, I'm going to have to listen elsewhere.
+This more recent shift towards intentionality has left me thinking more about how and from where I get my music. Mounting negative sentiment around Spotify for its low artist payouts, its CEO's investments, an AI-heavy product direction have driven some of my favourite artists to pull their music. Of course, this is an inconvenience to me, but that's the point: if they can risk their livelihood for a cause, then surely I can make a small sacrifice of convenience for the same. Besides, if I want to continue supporting them through streaming revenue, at least, I'm going to have to listen elsewhere.
 
 Coincidentally, my Spotify Family was also going through a Spotify Divorce, so **it was finally time to look for an alternative to Spotify**.
 
@@ -82,7 +82,7 @@ Based on my criteria, I landed on two platforms I was interested in trying: **Ap
 
 For whatever reason, I had assumed Apple Music was only available as a MacOS and iOS app, so I was surprised to find that not only had they released a fresh Apple Music app for Windows and Android, but they were also _quite good_. I would also soon discover some pretty powerful ideas in Apple's approach to music organization that would pique my interest and keep me powering through everything it would throw at me.
 
-_But what about Qobuz?_
+_First, though, what about Qobuz?_
 
 ### Qobuz: wrong product, right time
 
@@ -100,9 +100,7 @@ In hindsight—and with the recently-added "Release watch" feature—my frustrat
 
 **Qobuz stands out as a likely long-term winner in the streaming space**, at least for folks with a similar set of priorities as me. Their app experience was robust, lossless playback as a priority is neat, inclusion of a duo plan for couples makes it a financially attractive service, and the best royalty rates for artists out of all platforms. It's the service to keep an eye on, and something I'll definitely return to if Apple drastically changes its product strategy.
 
-It was time to move on to trying Apple Music.
-
-With the 3 month trial that came with my MacBook Air, there was _surely_ little to lose by it trying out.
+It was time to move on to trying Apple Music. With the 3 month trial that came with my MacBook Air, there was _surely_ little to lose by it trying out.
 
 ---
 
