@@ -4,7 +4,6 @@ date = 2025-10-19
 updated = 2025-10-27
 external_links_target_blank = true
 [extra]
-featured = true
 toc = true
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "From Spotify to Apple Music — every sharp edge"
-date = 2025-11-07
+date = 2025-11-25
 external_links_target_blank = true
 [extra]
 featured = true
@@ -20,7 +20,7 @@ Here, I cover my journey of onboarding and adapting to Apple Music as a primaril
 
 <figure>
 <aside>
-{{ image(url="android-transfer.jpg", alt="Apple Music (Android): Playlist transfer", no_hover=true)}}
+{{ image(url="apple-music/android-transfer.jpg", alt="Apple Music (Android): Playlist transfer", no_hover=true)}}
 <figcaption>Apple Music (Android): Playlist transfer</figcaption>
 </figure>
 </aside>
@@ -86,7 +86,7 @@ After importing my playlists and uploading my local music, I discovered two stra
 
 <aside>
 <figure>
-{{ image(url="apple-missing-songs.png", alt="An album in Apple Music with missing songs", no_hover=true)}}
+{{ image(url="apple-music/apple-missing-songs.png", alt="An album in Apple Music with missing songs", no_hover=true)}}
 <figcaption>Missing uploads</figcaption>
 </figure>
 </aside>
@@ -104,7 +104,7 @@ A few days later, I opened my Starred 2025 playlist as usual. To my horror, all 
 
 <figure>
 <aside>
-{{ image(url="apple-library-add.jpg", alt="Toggles to control 'Add to library' features", no_hover=true)}}
+{{ image(url="apple-music/apple-library-add.jpg", alt="Toggles to control 'Add to library' features", no_hover=true)}}
 <figcaption>Toggles to control 'Add to library' features</figcaption>
 </figure>
 </aside>
@@ -271,7 +271,7 @@ Obviously, you could just run a single Airplay 1 instance, but where's the fun i
 As mentioned, Airplay 2 isn't supported from the Apple Music on Windows app.
 
 <figure>
-{{ image(url="windows-airplay-2.png", alt="Incompatibility between Apple Music on Windows and Airplay 2 devices", no_hover=true) }}
+{{ image(url="apple-music/windows-airplay-2.png", alt="Incompatibility between Apple Music on Windows and Airplay 2 devices", no_hover=true) }}
 <figurecaption>Apple Music on Windows</figurecaption>
 </figure>
 
@@ -320,7 +320,7 @@ general =
 Now, Airplay 1 and 2 both available on my network:
 
 <figure>
-{{ image(url="windows-airplay-both.png", alt="Airplay 1 and 2 both available on my network", no_hover=true) }}
+{{ image(url="apple-music/windows-airplay-both.png", alt="Airplay 1 and 2 both available on my network", no_hover=true) }}
 <figurecaption>Apple Music on Windows</figurecaption>
 </figure>
 </details>
@@ -344,7 +344,7 @@ It's surprising that Apple even allow audio casting/capture from their Android a
 A week into my experience with Apple Music, I was feeling conflicted. I was loving the Apple Music app and music experience, but I'd invested a **significant** amount of time into figuring out all the quirks with the library, importing my music, and finding workarounds and alternatives to Last.fm and Spotify Connect. Tired from a week of debugging, I booted up Battlefield 6 to unwind, put on my favourite playlist, and was greeted with another test of strength:
 
 <figure>
-{{ image(url="fairplay.png", alt="Nvidia ShadowPlay popup about disabled desktop recording", no_hover=true) }}
+{{ image(url="apple-music/fairplay.png", alt="Nvidia ShadowPlay popup about disabled desktop recording", no_hover=true) }}
 <figcaption>Nvidia ShadowPlay</figcaption>
 </figure>
 

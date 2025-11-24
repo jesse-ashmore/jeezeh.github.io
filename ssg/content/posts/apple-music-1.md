@@ -1,6 +1,6 @@
 +++
 title = "From Spotify to Apple Music — why I listen"
-date = 2025-11-07
+date = 2025-11-25
 external_links_target_blank = true
 [extra]
 featured = true
@@ -43,7 +43,7 @@ After a few years, though, this single list started to bend and buckle, especial
 Fast forward nearly a decade, and I still batch my song by year, but now I also sort songs into various categories or <span class="tooltip" tabindex="0">'tags'<span class="tooltiptext fade-in-right"><b>It's a crime that music tagging is not the default way to build music collections.</b> Imagine if you could tag a song like `favourite`, `workout`, `great bassline`, etc. and build playlists and queues based on combinations of these!</span></span>, such as by activity, emotion, instrumentation, and more.
 
 <figure>
-{{ image(url="spotify-library.png", alt="My Spotify library ca. 2025", no_hover=true) }}
+{{ image(url="apple-music/spotify-library.png", alt="My Spotify library ca. 2025", no_hover=true) }}
 <figcaption>My Spotify library, 2025</figcaption>
 </figure>
 
