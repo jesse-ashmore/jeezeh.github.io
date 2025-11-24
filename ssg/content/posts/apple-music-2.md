@@ -10,7 +10,7 @@ toc = true
 <div class="card">
 This is the second entry in a duology of posts covering my move from Spotify to Apple Music.
 
-[In the previous entry](/posts/apple-music-2), I detailed my process for music discovery and curation and reflect on what music as a hobby means to me.
+[In the previous entry](/posts/apple-music-1), I detailed my process for music discovery and curation and reflect on what music as a hobby means to me.
 
 Here, I cover my journey of onboarding and adapting to Apple Music as a primarily non-Apple user. This entry is less reflective than the first, and serves as both documentation and a trouble-shooting guide for future users in a similar boat. **This will get technical.**
 
