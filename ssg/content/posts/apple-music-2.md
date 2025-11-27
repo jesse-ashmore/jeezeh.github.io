@@ -16,22 +16,18 @@ Here, I cover my journey of onboarding and adapting to Apple Music as a primaril
 
 </div>
 
-## A great first impression
+---
 
-<figure>
 <aside>
-{{ image(url="apple-music/android-transfer.jpg", alt="Apple Music (Android): Playlist transfer", no_hover=true)}}
+<figure>
+{{ image(url="android-transfer.jpg", alt="Apple Music (Android): Playlist transfer", no_hover=true)}}
 <figcaption>Apple Music (Android): Playlist transfer</figcaption>
 </figure>
 </aside>
 
-Let's get right into it by transferring my playlists from Spotify.
-
-<aside>
-**Factoring in some artists who recently pulled their music from Spotify**, I wouldn't be surprised if I actually *(re-)gained* music during the process.
-</aside>
-
 Apple (like Qobuz) is generous enough to provide free access to [SongShift](https://www.songshift.com/) for users moving their music from other platforms to Apple Music. Within a few minutes I kicked off the process to move all my playlists, and only an hour or so later it had completed. Given some playlists had thousands of songs, the speed and accuracy of the migration was impressive, playlists with hundreds of songs were only missing a one or two.
+
+Factoring in some artists who recently pulled their music from Spotify, I wouldn't be surprised if I actually _(re-)gained_ music during the process.
 
 Although it didn't copy my folder structure, it only took a few minutes to create them by hand and get back to the same point I left from with Spotify. This was a great first impression that would continue through the rest of the Android app experience. It's fast, looks gorgeous, and has most of the features I want from a portable music app.
 
@@ -63,7 +59,10 @@ Once converted, importing was as simple as going to `Library > Import > Upload f
 
 On Windows, Apple Music uses your local user's _Music_ folder (`%UserProfile%\Music`) to store library data, cache, downloaded tracks, and imported music (if you choose to copy imported files). There's a handy option in the settings which allows you to change this:
 
-![An option allowing users to control where Apple stores its library and other data](windows-music-folder.png#no-hover)
+<figure>
+{{ image(url="windows-music-folder.png", alt="An option allowing users to control where Apple stores its library and other data", no_hover=true)}}
+<figcaption>An option allowing users to control where Apple stores its library and other data</figcaption>
+</figure>
 
 **This setting does not work.** _Mostly_.
 
@@ -86,7 +85,7 @@ After importing my playlists and uploading my local music, I discovered two stra
 
 <aside>
 <figure>
-{{ image(url="apple-music/apple-missing-songs.png", alt="An album in Apple Music with missing songs", no_hover=true)}}
+{{ image(url="apple-missing-songs.png", alt="An album in Apple Music with missing songs", no_hover=true)}}
 <figcaption>Missing uploads</figcaption>
 </figure>
 </aside>
@@ -104,7 +103,7 @@ A few days later, I opened my Starred 2025 playlist as usual. To my horror, all 
 
 <figure>
 <aside>
-{{ image(url="apple-music/apple-library-add.jpg", alt="Toggles to control 'Add to library' features", no_hover=true)}}
+{{ image(url="apple-library-add.jpg", alt="Toggles to control 'Add to library' features", no_hover=true)}}
 <figcaption>Toggles to control 'Add to library' features</figcaption>
 </figure>
 </aside>
@@ -124,7 +123,7 @@ It actually took multiple instances of this happening before I finally realized 
 
 From a curation perspective, there's no fundamental difference between my collection of physical media, childhood mixtapes, or playlists; it's all music that I care about and want to listen to again.
 
-In theory, and the Library should have the <span class="tooltip">tools I need to wrangle my full collection<span class="tooltiptext">Library filters can be combined to narrow down lists of albums/artists/songs to just those I've uploaded or own, you can even create [Smart Playlists](https://support.apple.com/en-ie/guide/music-windows/mus1712973f4/windows) for these which automatically update.</span></span>. So, despite my shaky experience with the Library so far, I changed my mind _again_, and decided to re-add everything to the Library—including everything I had brought over from Spotify.
+In theory, and the Library should have the <span class="tooltip" tabindex="0">tools I need to wrangle my full collection<span class="tooltiptext">Library filters can be combined to narrow down lists of albums/artists/songs to just those I've uploaded or own, you can even create [Smart Playlists](https://support.apple.com/en-ie/guide/music-windows/mus1712973f4/windows) for these which automatically update.</span></span>. So, despite my shaky experience with the Library so far, I changed my mind _again_, and decided to re-add everything to the Library—including everything I had brought over from Spotify.
 
 Playlist-by-playlist I repeated the ritual:
 
@@ -136,9 +135,9 @@ Playlist-by-playlist I repeated the ritual:
 This took a bit longer than expected.
 
 {% alert(tip=true) %}
-For whatever reason, it takes a second or so for each song to be added to the library, meaning it was going to take a while to backfill the 10K+ songs I brought over from Spotify
+For whatever reason, it takes a second or so for each song to be added to the library, meaning it was going to take a while to backfill the 10K+ songs I brought over from Spotify. I only tried this on Apple Music for Mac, mind you.
 
-Plugged in, I ran `caffeinate -s -i -u` to keep it awake (in every way imaginable), and left Apple Music in focus to work away. I tried with various individual flags, but only a combination of these and keeping the Apple Music window in focus worked. **I didn't try this on Windows**.
+Plugged in, I ran `caffeinate -s -u` to keep it awake (and the user active), and left Apple Music in focus to work away. I tried with various individual flags, but only a combination of these and keeping the Apple Music window in focus worked. **I didn't try this on Windows**.
 {% end %}
 
 Now that I have all my music added to the Library, it's time to start listening and teach my _Apple Music Genius_ a thing or two. Soon it'll build up a profile for me, I'll start getting some good recommendations, and then I'll have my Spotify Wrapped—... _Oh, God!_ My Spotify Wrapped! My analytics!
@@ -149,7 +148,7 @@ The idea of music analytics has excited me since the first Spotify Wrapped, and 
 
 But of course, Apple Music has **no support for third-party integrations with Last.fm,** meaning any new _Scrobbles (sigh)_ would be Apple's knowledge alone.
 
-I briefly went down a bit of rabbit hole seeing if was possible to import my Last.fm or Spotify listening data directly into Apple Music—at least that way I could continue where I left off—but as of 2025, <span class="tooltip">it's not possible.<span class="tooltiptext">Apple Music stores its Library locally in an [encrypted **and** compressed format called `musicdb`](https://home.vollink.com/gary/playlister/musicdb.html). This is a proprietary format which has not yet been cracked.</span></span>
+I briefly went down a bit of rabbit hole seeing if was possible to import my Last.fm or Spotify listening data directly into Apple Music—at least that way I could continue where I left off—but as of 2025, <span class="tooltip" tabindex="0">it's not possible.<span class="tooltiptext">Apple Music stores its Library locally in an [encrypted **and** compressed format called `musicdb`](https://home.vollink.com/gary/playlister/musicdb.html). This is a proprietary format which has not yet been cracked.</span></span>
 
 {% alert(tip=true) %}
 To scrobble my plays on Apple Music, I use a combination of apps across devices:
@@ -229,7 +228,7 @@ Sure, I _could_ connect over Bluetooth to the Audiolab or MiniDSP, but I don't w
 
 I looked into alternative clients like [Cider](https://cider.sh/). While it seems to support remote control, it's for iOS only, doesn't play back lossless, and has a [bit of a messy reputation](https://www.reddit.com/r/AppleMusic/comments/vydyj8/i_know_everyone_likes_cider_but_the_devs_are/). Clearly, I would need either a Google Cast or Airplay receiver.
 
-It seems that Google Cast is actually a <span class="tooltip">proprietary protocol<span>Google, please release an open standard, it doesn't need to support DRM!</span></span>, and requires some sort of official device certification, so running a headless receiver on my server was a no-go. But what about Airplay?
+It seems that Google Cast is actually a <span class="tooltip" tabindex="0">proprietary protocol<span>Google, please release an open standard, it doesn't need to support DRM!</span></span>, and requires some sort of official device certification, so running a headless receiver on my server was a no-go. But what about Airplay?
 
 #### Shairport Sync: Airplay via Docker
 
@@ -271,7 +270,7 @@ Obviously, you could just run a single Airplay 1 instance, but where's the fun i
 As mentioned, Airplay 2 isn't supported from the Apple Music on Windows app.
 
 <figure>
-{{ image(url="apple-music/windows-airplay-2.png", alt="Incompatibility between Apple Music on Windows and Airplay 2 devices", no_hover=true) }}
+{{ image(url="windows-airplay-2.png", alt="Incompatibility between Apple Music on Windows and Airplay 2 devices", no_hover=true) }}
 <figurecaption>Apple Music on Windows</figurecaption>
 </figure>
 
@@ -320,7 +319,7 @@ general =
 Now, Airplay 1 and 2 both available on my network:
 
 <figure>
-{{ image(url="apple-music/windows-airplay-both.png", alt="Airplay 1 and 2 both available on my network", no_hover=true) }}
+{{ image(url="windows-airplay-both.png", alt="Airplay 1 and 2 both available on my network", no_hover=true) }}
 <figurecaption>Apple Music on Windows</figurecaption>
 </figure>
 </details>
@@ -344,7 +343,7 @@ It's surprising that Apple even allow audio casting/capture from their Android a
 A week into my experience with Apple Music, I was feeling conflicted. I was loving the Apple Music app and music experience, but I'd invested a **significant** amount of time into figuring out all the quirks with the library, importing my music, and finding workarounds and alternatives to Last.fm and Spotify Connect. Tired from a week of debugging, I booted up Battlefield 6 to unwind, put on my favourite playlist, and was greeted with another test of strength:
 
 <figure>
-{{ image(url="apple-music/fairplay.png", alt="Nvidia ShadowPlay popup about disabled desktop recording", no_hover=true) }}
+{{ image(url="fairplay.png", alt="Nvidia ShadowPlay popup about disabled desktop recording", no_hover=true) }}
 <figcaption>Nvidia ShadowPlay</figcaption>
 </figure>
 

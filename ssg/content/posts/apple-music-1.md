@@ -19,12 +19,11 @@ This is the first entry in a duology of posts covering my move from Spotify to A
 ---
 
 <!-- TODO
-1. Drop caps
 2. Make popover a popup or toast
 3. Figure out what's wrong with the images
  -->
 
-Music has always played a huge role in my life, but the way I've enjoyed it as a hobby has changed over the years. In my early childhood, I listened to a mix of my parents' collections: _AC/DC, Bruce Springsteen, Electric Light Orchestra, Macy Gray_; and soon, I started forming my own tastes and interests. It was around this time that I started collecting music I enjoyed, and seeking out entirely _new_ music. These were the first sparks of _music curation_, a process that would enshrine itself in my daily life for the next 20 years.
+<span class="intro">Music has always played a huge role in my life, but the way I've enjoyed it as a hobby has changed over the years. In my early childhood, I listened to a mix of my parents' collections: _AC/DC, Bruce Springsteen, Electric Light Orchestra, Macy Gray_; and soon, I started forming my own tastes and interests. It was around this time that I started collecting music I enjoyed, and seeking out entirely _new_ music. These were the first sparks of _music curation_, a process that would enshrine itself in my daily life for the next 20 years.</span>
 
 ## Discovery and curation
 
@@ -47,7 +46,7 @@ After a few years, though, this single list started to bend and buckle, especial
 Fast forward nearly a decade, and I still batch my song by year, but now I also sort songs into various categories or <span class="tooltip" tabindex="0">'tags'<span class="tooltiptext fade-in-right"><b>It's a crime that music tagging is not the default way to build music collections.</b> Imagine if you could tag a song like `favourite`, `workout`, `great bassline`, etc. and build playlists and queues based on combinations of these!</span></span>, such as by activity, emotion, instrumentation, and more.
 
 <figure>
-{{ image(url="apple-music/spotify-library.png", alt="My Spotify library ca. 2025", no_hover=true) }}
+{{ image(url="spotify-library.png", alt="My Spotify library ca. 2025", no_hover=true) }}
 <figcaption>My Spotify library, 2025</figcaption>
 </figure>
 
@@ -96,7 +95,7 @@ _First, though, what about Qobuz?_
 
 After transferring my music using [Soundiiz](https://soundiiz.com/) (which they paid for, by the way!) I found that quite a few songs were missing from my playlists. It seems that Qobuz' library is not as extensive as Spotify's. Beyond that, it was also missing support for playlist folders, a feature I had grown to depend on with Spotify. I spent a while renaming every playlist to be prefixed with its original folder name in an attempt to bring order to the chaos, but having everything in one giant list made browsing and updating playlists a pain.
 
-Aside from playlist features, Qobuz also seems a little behind in the discovery department, and [until recently](https://community.qobuz.com/press-en/qobuz-unveils-its-new-discover-page) had no clear analogue to Spotify's Discover Weekly and Release Radar. I liked the idea of their music magazines, but **I didn't end up sticking around long enough to get into it**.
+Aside from playlist features, Qobuz also seems a little behind in the discovery department, and [until recently](https://community.qobuz.com/press-en/qobuz-unveils-its-new-discover-page) had no clear analogue to Spotify's Discover Weekly and Release Radar. I liked the idea of their music magazines, but I didn't end up sticking around long enough to get into it.
 
 ### ... or right product, wrong time?
 
@@ -113,17 +112,3 @@ It was time to move on to trying Apple Music. With the 3 month trial that came w
 <!-- This makes the tooltip float and follow the mouse -->
 <!-- TODO: For mobile, make the tooltip a pop-up from the bottom of the screen -->
 <!-- Also make this clickable to stay open. Maybe remove the hover entirely -->
-
-<script>
-var tooltip = document.querySelectorAll('.tooltiptext');
-
-document.addEventListener('mousemove', fn, false);
-
-function fn(e) {
-  for (var i=tooltip.length; i--;) {
-      const bound = tooltip[i].getBoundingClientRect();
-      tooltip[i].style.left = `${e.clientX - (bound.width / 2)}px`;
-      tooltip[i].style.top = `${e.clientY}px`;
-  }
-}
-</script>
