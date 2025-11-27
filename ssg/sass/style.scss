@@ -1,20 +1,8 @@
 @use "../themes/duckquill/sass/mods/modern-hr";
 @import "../themes/duckquill/sass/style.scss";
 
-// main > p:first-of-type::first-letter {
-//     font-size: 3.5em;
-//     font-weight: bold;
-//     float: left;
-//     line-height: 1;
-//     margin: 0 0.15em 0 0;
-//     color: #2c3e50;
-//     font-family: 'Georgia', serif;
-//     padding-right: 0.05em;
-//     text-shadow: 0 1px 1px rgba(0,0,0,0.08);
-//     vertical-align: baseline;
-//     position: relative;
-//     top: 0.08em;
-// }
+$accent-light: rgba(255, 255, 255, 0.75);
+$accent-dark: rgba(32, 32, 32, 0.8);
 
 .mermaid {
   margin: auto;
@@ -32,48 +20,64 @@
 
 .tooltip {
   position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-  cursor: pointer;
-
-  html[data-theme="dark"] & {
-    border-bottom: 1px dotted #cfcfcf;
-  }
+  text-shadow: var(--text-shadow-glow);
+  cursor: help;
 }
 
 .tooltiptext {
-  display: inline-block;
+  z-index: 1000;
   visibility: hidden;
-  font-size: medium;
-  width: 400px;
-  color: #564444;
-  text-align: left;
-  border-radius: 20px;
-  padding: 1rem;
+
+  /* Fixed positioning - slide up from bottom center */
   position: fixed;
-  margin-top: 2rem;
-  z-index: 1;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(120%);
 
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.8);
-  border: solid rgba(255, 255, 255, 0.8) 1px;
-  box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.8),
-    0 8px 32px rgba(0, 0, 0, 0.1);
+  /* Responsive width */
+  width: 90vw;
+  max-width: 400px;
 
-  // Adapt for data-theme=dark on html
-  html[data-theme="dark"] & {
+  /* Max height with scrolling */
+  max-height: 66vh;
+  overflow-y: auto;
+
+  text-align: left;
+  font-size: medium;
+  color: #564444;
+  text-shadow: none;
+
+  padding: 1rem;
+
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  background-color: var(--glass-bg);
+  box-shadow: var(--edge-highlight), var(--shadow-glow);
+  border-radius: calc(var(--rounded-corner) + 0.5rem);
+
+  /* Smooth slide up animation */
+  transition: transform 0.2s cubic-bezier(0.77, 0, 0.96, 0.32),
+    visibility 0s 0.2s;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tooltiptext {
     color: #cfcfcf;
-    background: rgba(32, 32, 32, 0.8);
-    border: solid rgba(32, 32, 32, 0.8) 1px;
-    box-shadow: inset 0 0 60px rgba(32, 32, 32, 0.8),
-      0 8px 32px rgba(0, 0, 0, 0.2);
   }
 }
 
 .tooltip:hover .tooltiptext,
 .tooltip:focus .tooltiptext {
   visibility: visible;
-  animation: 0.25s fade-in-right;
+  transform: translateX(-50%) translateY(0);
+  transition: transform 0.3s cubic-bezier(0, 0.99, 0.23, 1), visibility 0s;
+}
+
+/* Optional: larger screens use max-width more */
+@media (min-width: 768px) {
+  .tooltiptext {
+    width: 400px;
+  }
 }
 
 @keyframes fade-in-right {
@@ -88,16 +92,18 @@
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 20px;
+  background: $accent-light;
   padding: 1rem;
-  box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.8),
-    0 8px 32px rgba(0, 0, 0, 0.1);
+  // border-bottom: 2px solid #4448;
 
-  // Adapt for data-theme=dark on html
-  html[data-theme="dark"] & {
-    background: rgba(32, 32, 32, 0.8);
-    box-shadow: inset 0 0 60px rgba(32, 32, 32, 0.8),
-      0 8px 32px rgba(0, 0, 0, 0.2);
-  }
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  background-color: var(--glass-bg);
+  box-shadow: var(--edge-highlight), var(--shadow-glass);
+  border-radius: calc(var(--rounded-corner) + 0.5rem);
+}
+
+article > p:first-of-type::first-line {
+  font-variant: small-caps;
+  font-weight: bold;
 }
