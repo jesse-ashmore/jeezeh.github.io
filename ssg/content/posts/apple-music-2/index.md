@@ -228,7 +228,7 @@ Sure, I _could_ connect over Bluetooth to the Audiolab or MiniDSP, but I don't w
 
 I looked into alternative clients like [Cider](https://cider.sh/). While it seems to support remote control, it's for iOS only, doesn't play back lossless, and has a [bit of a messy reputation](https://www.reddit.com/r/AppleMusic/comments/vydyj8/i_know_everyone_likes_cider_but_the_devs_are/). Clearly, I would need either a Google Cast or Airplay receiver.
 
-It seems that Google Cast is actually a <span class="tooltip" tabindex="0">proprietary protocol<span>Google, please release an open standard, it doesn't need to support DRM!</span></span>, and requires some sort of official device certification, so running a headless receiver on my server was a no-go. But what about Airplay?
+It seems that Google Cast is actually a <span class="tooltip" tabindex="0">proprietary protocol<span class="tooltiptext">Google, please release an open standard, it doesn't need to support DRM!</span></span>, and requires some sort of official device certification, so running a headless receiver on my server was a no-go. But what about Airplay?
 
 #### Shairport Sync: Airplay via Docker
 
@@ -270,7 +270,8 @@ Obviously, you could just run a single Airplay 1 instance, but where's the fun i
 As mentioned, Airplay 2 isn't supported from the Apple Music on Windows app.
 
 <figure>
-{{ image(url="windows-airplay-2.png", alt="Incompatibility between Apple Music on Windows and Airplay 2 devices", no_hover=true) }}
+{{ image(url="windows-airplay-2.pn
+g", alt="Incompatibility between Apple Music on Windows and Airplay 2 devices", no_hover=true) }}
 <figurecaption>Apple Music on Windows</figurecaption>
 </figure>
 
@@ -395,20 +396,3 @@ As much as I'd like to wax poetic about technology being an art form, much of it
 Like music, technology is often a labour of passion, discovery, and excitement. That's a lot of emotion to process internally, and friends and family were becoming numb to my constant ramblings about _Airplay_, _The Library_, and _Docker_; I needed an outlet without ears or need of patience. At the same time, I didn't want my learnings to be forgotten, so I started working on this _short_ post about my findings.
 
 It quickly grew from a bulleted list into a troubleshooting guide, the introduction evolved into a longer reflection piece, and eventually both were published as two separate posts of their own right. **Ironically, it's taken me _far_ longer to write this than I spent fighting with Apple Music in the first place**, but I've gained something more than an overly-complicated listening setup. No matter the topic, I always feel like I learn a bit more about myself through writing, and I've come to realise—now more than ever—just how big a role music and technology play in my life.
-
-<!-- This makes the tooltip float and follow the mouse -->
-<!-- TODO: For mobile, make the tooltip a pop-up from the bottom of the screen -->
-<!-- Also make this clickable to stay open. Maybe remove the hover entirely -->
-<script>
-var tooltip = document.querySelectorAll('.tooltiptext');
-
-document.addEventListener('mousemove', fn, false);
-
-function fn(e) {
-  for (var i=tooltip.length; i--;) {
-      const bound = tooltip[i].getBoundingClientRect();
-      tooltip[i].style.left = `${e.clientX - (bound.width / 2)}px`;
-      tooltip[i].style.top = `${e.clientY}px`;
-  }
-}
-</script>
