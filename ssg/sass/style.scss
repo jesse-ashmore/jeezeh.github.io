@@ -1,20 +1,8 @@
 @use "../themes/duckquill/sass/mods/modern-hr";
 @import "../themes/duckquill/sass/style.scss";
 
-// main > p:first-of-type::first-letter {
-//     font-size: 3.5em;
-//     font-weight: bold;
-//     float: left;
-//     line-height: 1;
-//     margin: 0 0.15em 0 0;
-//     color: #2c3e50;
-//     font-family: 'Georgia', serif;
-//     padding-right: 0.05em;
-//     text-shadow: 0 1px 1px rgba(0,0,0,0.08);
-//     vertical-align: baseline;
-//     position: relative;
-//     top: 0.08em;
-// }
+$accent-light: rgba(255, 255, 255, 0.75);
+$accent-dark: rgba(32, 32, 32, 0.8);
 
 .mermaid {
   margin: auto;
@@ -28,4 +16,94 @@
     width: 90vw;
     max-width: 90vw;
   }
+}
+
+.tooltip {
+  position: relative;
+  text-shadow: var(--text-shadow-glow);
+  cursor: help;
+}
+
+.tooltiptext {
+  z-index: 1000;
+  visibility: hidden;
+
+  /* Fixed positioning - slide up from bottom center */
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(120%);
+
+  /* Responsive width */
+  width: 90vw;
+  max-width: 400px;
+
+  /* Max height with scrolling */
+  max-height: 66vh;
+  overflow-y: auto;
+
+  text-align: left;
+  font-size: medium;
+  color: var(--fg-color);
+  text-shadow: none;
+
+  padding: 1rem;
+
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  background-color: var(--glass-bg);
+  box-shadow: var(--edge-highlight), var(--shadow-glow);
+  border-radius: calc(var(--rounded-corner) + 0.5rem);
+
+  /* Smooth slide up animation */
+  // https://cubic-bezier.com/#.77,0,.96,.32
+  transition: transform 0.2s cubic-bezier(0.77, 0, 0.96, 0.32),
+    visibility 0s 0.2s;
+
+  @media (min-width: 768px) {
+    & {
+      width: 400px;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tooltiptext {
+    color: #cfcfcf;
+  }
+}
+
+.tooltip:hover .tooltiptext,
+.tooltip:focus .tooltiptext {
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  transition: transform 0.3s cubic-bezier(0, 0.99, 0.23, 1), visibility 0s;
+}
+
+@keyframes fade-in-right {
+  from {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.card {
+  background: $accent-light;
+  padding: 1rem;
+  // border-bottom: 2px solid #4448;
+
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  background-color: var(--glass-bg);
+  box-shadow: var(--edge-highlight), var(--shadow-glass);
+  border-radius: calc(var(--rounded-corner) + 0.5rem);
+}
+
+article > p:first-of-type::first-line {
+  font-variant: small-caps;
+  font-weight: bold;
 }

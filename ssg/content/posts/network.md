@@ -4,7 +4,6 @@ date = 2025-10-19
 updated = 2025-10-27
 external_links_target_blank = true
 [extra]
-featured = true
 toc = true
 +++
 
@@ -17,17 +16,15 @@ toc = true
   mermaid.initialize({ startOnLoad: true });
 </script>
 
-{% alert(note=true) %}
+<div class="card">
 This post is part of a living documentation series I'm working on for my home network setup. The purpose is to:
 
 1. Document my network setup for myself or others to replicate
 2. Share insights, challenges, fun, and learnings along the way
 3. Practice my writing
-{% end %}
 
-**In this post, I'll be discussing my network setup**. I'll explain my current dual-router situation, adding DNS filtering with Pi-hole, and mitigating DNS hijacking with Cloudflare DNS-over-HTTPS.
-
----
+In this post, I'll be discussing my network setup. I'll explain my current dual-router situation, adding DNS filtering with Pi-hole, and mitigating DNS hijacking with Cloudflare DNS-over-HTTPS.
+</div>
 
 ## The Routers
 
@@ -64,7 +61,7 @@ if (globalSettings.deviceGeneration == "mv3") {
 
 Exposing the settings panel by removing the previous `.remove()` statement is promising, but sadly returns a `403` with a divine `"Bridge mode is forbidden!"` error message if you try to apply the settings.
 
-![Virgin Media's router settings page showing an exposed "modem mode" panel that returns an error on trying to enable it](modem-mode.png#no-hover)
+![Virgin Media's router settings page showing an exposed "modem mode" panel that returns an error on trying to enable it](modem-mode.webp#no-hover)
 
 So, for the time being, I've disabled as much as I can on the 5x (Wi-Fi, DHCP, Firewall, etc.) and enabled DMZ for the Asus router behind it. It's a shame that the software is so restrictive; it really is a capable modem/router built for the 1Gb+ era.
 
@@ -84,6 +81,7 @@ A bigger concern than advertisers, though, is my ISP. While I can't hide everyth
 If you're not using the Pi-hole as a DHCP server, you will need to **enable Conditional Forwarding on the Pi-hole** to allow it to resolve client names on the network rather than seeing client IPs.
 
 You should set this to your router's CIDR range and IP, like `true,192.168.1.1/24,192.168.1.1`.
+
 </details>
 
 <details>
@@ -152,9 +150,9 @@ services:
     # ...
 ```
 
-and voila! Any devices which use Pi-hole as a DNS server are treated to DNS-over-HTTPS, no hijacking or snooping allowed:
+![The result of a DNS test performed on 1.1.1.1/help, showing DNS-over-HTTPS being successful](cf-doh.webp#no-hover#end)
 
-![The result of a DNS test performed on 1.1.1.1/help, showing DNS-over-HTTPS being successful](cf-doh.png#no-hover)
+and there we go! Any devices which use Pi-hole as a DNS server are treated to DNS-over-HTTPS, no hijacking or snooping allowed:
 
 ## Conclusion
 
