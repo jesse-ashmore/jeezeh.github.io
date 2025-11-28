@@ -18,6 +18,10 @@ This is the first entry in a duology of posts covering my move from Spotify to A
 
 ---
 
+<!-- TODO
+1. Weird width issues on Mobile
+2. Asides appearing in strange places -->
+
 <span class="intro">Music has always played a huge role in my life, but the way I've enjoyed it as a hobby has changed over the years. In my early childhood, I listened to a mix of my parents' collections: _AC/DC, Bruce Springsteen, Electric Light Orchestra, Macy Gray_; and soon, I started forming my own tastes and interests. It was around this time that I started collecting music I enjoyed, and seeking out entirely _new_ music. These were the first sparks of _music curation_, a process that would enshrine itself in my daily life for the next 20 years.</span>
 
 ## Discovery and curation

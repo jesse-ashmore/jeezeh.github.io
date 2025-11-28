@@ -51,7 +51,7 @@ $accent-dark: rgba(32, 32, 32, 0.8);
 
   -webkit-backdrop-filter: var(--blur);
   backdrop-filter: var(--blur);
-  background-color: var(--bg-overlay);
+  background-color: var(--glass-bg);
   box-shadow: var(--edge-highlight), var(--shadow-glow);
   border-radius: calc(var(--rounded-corner) + 0.5rem);
 
@@ -59,6 +59,12 @@ $accent-dark: rgba(32, 32, 32, 0.8);
   // https://cubic-bezier.com/#.77,0,.96,.32
   transition: transform 0.2s cubic-bezier(0.77, 0, 0.96, 0.32),
     visibility 0s 0.2s;
+
+  @media (min-width: 768px) {
+    & {
+      width: 400px;
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -72,13 +78,6 @@ $accent-dark: rgba(32, 32, 32, 0.8);
   visibility: visible;
   transform: translateX(-50%) translateY(0);
   transition: transform 0.3s cubic-bezier(0, 0.99, 0.23, 1), visibility 0s;
-}
-
-/* Optional: larger screens use max-width more */
-@media (min-width: 768px) {
-  .tooltiptext {
-    width: 400px;
-  }
 }
 
 @keyframes fade-in-right {
