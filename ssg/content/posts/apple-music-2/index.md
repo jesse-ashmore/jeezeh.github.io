@@ -18,6 +18,8 @@ Here, I cover my journey of onboarding and adapting to Apple Music as a primaril
 
 ---
 
+Apple (like Qobuz) is generous enough to provide free access to [SongShift](https://www.songshift.com/) for users moving their music from other platforms to Apple Music.
+
 <aside>
 <figure>
 {{ image(url="android-transfer.jpg", alt="Apple Music (Android): Playlist transfer", no_hover=true)}}
@@ -25,9 +27,7 @@ Here, I cover my journey of onboarding and adapting to Apple Music as a primaril
 </figure>
 </aside>
 
-Apple (like Qobuz) is generous enough to provide free access to [SongShift](https://www.songshift.com/) for users moving their music from other platforms to Apple Music. Within a few minutes I kicked off the process to move all my playlists, and only an hour or so later it had completed. Given some playlists had thousands of songs, the speed and accuracy of the migration was impressive, playlists with hundreds of songs were only missing a one or two.
-
-Factoring in some artists who recently pulled their music from Spotify, I wouldn't be surprised if I actually _(re-)gained_ music during the process.
+Within a few minutes I kicked off the process to move all my playlists, and only an hour or so later it had completed. Given some playlists had thousands of songs, the speed and accuracy of the migration was impressive, playlists with hundreds of songs were only missing a one or two. Factoring in some artists who recently pulled their music from Spotify, I wouldn't be surprised if I actually _(re-)gained_ music during the process.
 
 Although it didn't copy my folder structure, it only took a few minutes to create them by hand and get back to the same point I left from with Spotify. This was a great first impression that would continue through the rest of the Android app experience. It's fast, looks gorgeous, and has most of the features I want from a portable music app.
 
@@ -164,7 +164,7 @@ I'm not happy about needing more third party apps, but these kinds of workaround
 
 ## The listening experience
 
-As mentioned, I have a fairly broad ecosystem of devices, and being an Apple service, I was right not to be particularly optimistic about what lay ahead. While I've had no _general_ issues with song playback—the most basic function for a music app, to be fair—each device has come with its own challenges.
+I have a fairly broad ecosystem of devices, and being an Apple service, I was right not to be particularly optimistic about what lay ahead. While I've had no _general_ issues with song playback—the most basic function for a music app, to be fair—each device has come with its own challenges.
 
 The first thing I noticed was that Apple Music has **no equivalent to Spotify Connect**.
 
@@ -232,26 +232,12 @@ It seems that Google Cast is actually a <span class="tooltip" tabindex="0">propr
 
 #### Shairport Sync: Airplay via Docker
 
-My home server is permanently connected to my audio system for streaming, this meant all I needed to do was get an Airplay receiver working and things should be golden. Fortune was in favour too, thanks to an open source Airplay receiver project called [Shairport Sync](https://github.com/mikebrady/shairport-sync).
-
 {% alert(tip=true) %}
-Setting up Shairport Sync was super simple. Minimally, this was enough for an Airplay 2 container:
+My home server is permanently connected to my audio system for streaming, this meant all I needed to do was get an Airplay receiver working and things should be golden. Fortune was in my favour too, thanks to an open source Airplay receiver project called [Shairport Sync](https://github.com/mikebrady/shairport-sync).
 
-```yaml
-shairport-sync:
-  image: mikebrady/shairport-sync:latest
-  container_name: shairport
-  network_mode: host
-  restart: unless-stopped
-  devices:
-    - "/dev/snd" # ALSA device, omit if using PulseAudio
-  command: -- -d hw:1 # Run on ALSA device hw:1 (my USB sound card)
-  logging:
-    options:
-      max-size: "200k"
-      max-file: "10"
-```
+Shairport Sync provides an example [Docker Compose](https://github.com/mikebrady/shairport-sync/blob/3c8ceb7c97c8782903ec48e280023436711e0913/docker/docker-compose.yaml) snippet, making setting up an Airplay 2 container super simple.
 
+If using ALSA,you'll want to run `aplay -L` and/or `aplay -l` to identify which device to output sound to. In my case, `hw: 1` is the MiniDSP Flex. You can specify the device either through a configuration file, or directly in the Docker Compose service with `command: -- -d hw:1`.
 {% end %}
 
 **But is it lossless?** As far as I can tell, [Shairport Sync should support lossless streaming](https://github.com/mikebrady/shairport-sync/issues/1205), but from some very basic network-watching it looks like devices using Airplay are transmitting at about 800-1000Kbps. This is theoretically better than the 256Kbps AAC stream at least, but I need to do some proper bit-perfect comparisons to see to if what it actually plays back looks correct.
@@ -260,20 +246,17 @@ In any case, the casting experience from Mac works as-expected, and even works w
 
 #### Casting from Windows
 
-As mentioned, Airplay 2 isn't supported from the Apple Music on Windows app, but with Docker you can easily run two instances of Shairport Sync.
+As mentioned, Airplay 2 isn't supported from the Apple Music on Windows (AMW) app, but with Docker you can easily run two instances of Shairport Sync.
 
-Obviously, you could just run a single Airplay 1 instance, but where's the fun in that?
+<figure>
+{{ image(url="windows-airplay-2.png", alt="Incompatibility between Apple Music on Windows and Airplay 2 devices", no_hover=true) }}
+<figcaption>AMW playback error with Airplay 2</figcaption>
+</figure>
+
+Obviously, you could just run a single Airplay 1 instance and call it a day, but where's the fun in that?
 
 <details>
 <summary>Running Airplay 1 and 2 so that I can stream from Windows</summary>
-
-As mentioned, Airplay 2 isn't supported from the Apple Music on Windows app.
-
-<figure>
-{{ image(url="windows-airplay-2.pn
-g", alt="Incompatibility between Apple Music on Windows and Airplay 2 devices", no_hover=true) }}
-<figurecaption>Apple Music on Windows</figurecaption>
-</figure>
 
 Thankfully, [@jwillikers](https://github.com/mikebrady/shairport-sync/issues/1816#issuecomment-2476287591) found a workaround for running two instances concurrently. In short, you just need to consume the classic Shairport Sync image which uses Airplay 1 and differentiate the port through a config file.
 
@@ -321,7 +304,7 @@ Now, Airplay 1 and 2 both available on my network:
 
 <figure>
 {{ image(url="windows-airplay-both.png", alt="Airplay 1 and 2 both available on my network", no_hover=true) }}
-<figurecaption>Apple Music on Windows</figurecaption>
+<figurecaption>Both Airplay 1 and 2 devices visible in AMW, only Airplay 1 works, though.</figurecaption>
 </figure>
 </details>
 

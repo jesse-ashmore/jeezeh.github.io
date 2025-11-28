@@ -30,8 +30,6 @@ In my late childhood and early tweens, I filled spindles of CD-Rs with low-res M
 
 In my teens, YouTube and streaming began to take hold, and _Spotify Free_ finally launched in Ireland in [late 2012](https://irishtechnews.ie/spotify-goes-live-in-ireland/).
 
-<!-- Aside with quote? -->
-
 Suddenly, the act of finding and acquiring music became automatic, with Spotify granting instant access to a practically infinite backlog (_and new releases_) of every genre imaginable. No longer was a single song or album getting weeks of airtime; songs would play back-to-back, and those essential favourites of my teenage years would enter my life, [permanently shaping my attitudes, emotions, and memories around it](https://archive.is/poojo). This was far too much content for CD-Rs, I needed something fast and flexible.
 
 Enter the playlist.
@@ -72,11 +70,11 @@ We are not poor for [music streaming services](https://en.wikipedia.org/wiki/Com
 
 ### How I listen
 
+Away from home, my listening habits are fairly regular: I listen to music on my phone during my commute, and on my work laptop at the office. At home, however, things get a little more _involved_.
+
 <aside>
 If you're thinking that having a device ecosystem spanning Linux, Windows, Android and Mac OS might make this difficult, you're right.
 </aside>
-
-Away from home, my listening habits are fairly regular: I listen to music on my phone during my commute, and on my work laptop at the office. At home, however, things get a little more _involved_.
 
 Depending on the room and activity, I might be listening on my PC while playing games, my MacBook Air while doing things like writing this post, or on my home audio system (including a Linux server as a network streamer/player) for more focused listening.
 
