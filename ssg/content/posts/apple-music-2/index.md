@@ -20,7 +20,7 @@ Apple (like Qobuz) is generous enough to provide free access to [SongShift](http
 
 <aside>
 <figure>
-{{ image(url="android-transfer.jpg", alt="Apple Music (Android): Playlist transfer", no_hover=true)}}
+{{ image(url="android-transfer.webp", alt="Apple Music (Android): Playlist transfer", no_hover=true)}}
 <figcaption>Apple Music (Android): Playlist transfer</figcaption>
 </figure>
 </aside>
@@ -58,7 +58,7 @@ Once converted, importing was as simple as going to `Library > Import > Upload f
 On Windows, AM uses your local user's _Music_ folder (`%UserProfile%\Music`) to store library data, cache, downloaded tracks, and imported music (if you choose to copy imported files). There's a handy option in the settings which allows you to change this:
 
 <figure>
-{{ image(url="windows-music-folder.png", alt="An option allowing users to control where Apple stores its library and other data", no_hover=true)}}
+{{ image(url="windows-music-folder.webp", alt="An option allowing users to control where Apple stores its library and other data", no_hover=true)}}
 <figcaption>An option allowing users to control where Apple stores its library and other data</figcaption>
 </figure>
 
@@ -83,7 +83,7 @@ After importing my playlists and uploading my local music, I discovered two stra
 
 <aside>
 <figure>
-{{ image(url="apple-missing-songs.png", alt="An album in Apple Music with missing songs", no_hover=true)}}
+{{ image(url="apple-missing-songs.webp", alt="An album in Apple Music with missing songs", no_hover=true)}}
 <figcaption>Missing tracks from an uploaded album</figcaption>
 </figure>
 </aside>
@@ -101,7 +101,7 @@ A few days later, I opened my Starred 2025 playlist as usual. To my horror, all 
 
 <figure>
 <aside>
-{{ image(url="apple-library-add.jpg", alt="Toggles to control 'Add to library' features", no_hover=true)}}
+{{ image(url="apple-library-add.webp", alt="Toggles to control 'Add to library' features", no_hover=true)}}
 <figcaption>Toggles to control 'Add to library' features</figcaption>
 </figure>
 </aside>
@@ -249,7 +249,7 @@ In any case, the casting experience from Mac works as-expected, and even works w
 Unfortunately, after setting up Shairport Sync, I discovered that the Windows AM app does **not** support Airplay 2 for some reason.
 
 <figure>
-{{ image(url="windows-airplay-2.png", alt="Incompatibility between Apple Music on Windows and Airplay 2 devices", no_hover=true) }}
+{{ image(url="windows-airplay-2.webp", alt="Incompatibility between Apple Music on Windows and Airplay 2 devices", no_hover=true) }}
 <figcaption>AMW playback error with Airplay 2</figcaption>
 </figure>
 
@@ -303,7 +303,7 @@ general =
 Now, Airplay 1 and 2 both available on my network:
 
 <figure>
-{{ image(url="windows-airplay-both.png", alt="Airplay 1 and 2 both available on my network", no_hover=true) }}
+{{ image(url="windows-airplay-both.webp", alt="Airplay 1 and 2 both available on my network", no_hover=true) }}
 <figurecaption>Both Airplay 1 and 2 devices visible in AMW, only Airplay 1 works, though.</figurecaption>
 </figure>
 </details>
@@ -332,7 +332,7 @@ It's surprising that Apple even allow audio capture from their Android app in th
 A week into my experience with Apple Music, I was feeling conflicted. I was loving the AM app and music experience, but I'd invested a **significant** amount of time into figuring out all the quirks with the library, importing my music, and finding workarounds and alternatives to Last.fm and Spotify Connect. Tired from a week of debugging, I booted up Battlefield 6 to unwind, put on my favourite playlist, and was greeted with another test of my resolve:
 
 <figure>
-{{ image(url="fairplay.png", alt="Nvidia ShadowPlay popup about disabled desktop recording", no_hover=true) }}
+{{ image(url="fairplay.webp", alt="Nvidia ShadowPlay popup about disabled desktop recording", no_hover=true) }}
 <figcaption>Nvidia ShadowPlay</figcaption>
 </figure>
 

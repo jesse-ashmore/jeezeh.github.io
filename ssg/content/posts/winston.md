@@ -143,6 +143,6 @@ for speaker_segment in transcript["results"]["speaker_labels"]["segments"]:
 
 It's humbling what one can do with just a small bit of code (<100 lines) and an enterprise-scale audio transcription service from a cloud computing super giant.
 
-![Screenshot of the Winston program output: a Word document showing speech grouped by speaker, with words colour-coded by confidence interval.](word.png#no-hover)
+![Screenshot of the Winston program output: a Word document showing speech grouped by speaker, with words colour-coded by confidence interval.](word.webp#no-hover)
 
 [GitHub](https://github.com/JeeZeh/winston)

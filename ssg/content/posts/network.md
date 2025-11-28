@@ -63,7 +63,7 @@ if (globalSettings.deviceGeneration == "mv3") {
 
 Exposing the settings panel by removing the previous `.remove()` statement is promising, but sadly returns a `403` with a divine `"Bridge mode is forbidden!"` error message if you try to apply the settings.
 
-![Virgin Media's router settings page showing an exposed "modem mode" panel that returns an error on trying to enable it](modem-mode.png#no-hover)
+![Virgin Media's router settings page showing an exposed "modem mode" panel that returns an error on trying to enable it](modem-mode.webp#no-hover)
 
 So, for the time being, I've disabled as much as I can on the 5x (Wi-Fi, DHCP, Firewall, etc.) and enabled DMZ for the Asus router behind it. It's a shame that the software is so restrictive; it really is a capable modem/router built for the 1Gb+ era.
 
@@ -153,7 +153,7 @@ services:
 
 and voila! Any devices which use Pi-hole as a DNS server are treated to DNS-over-HTTPS, no hijacking or snooping allowed:
 
-![The result of a DNS test performed on 1.1.1.1/help, showing DNS-over-HTTPS being successful](cf-doh.png#no-hover)
+![The result of a DNS test performed on 1.1.1.1/help, showing DNS-over-HTTPS being successful](cf-doh.webp#no-hover)
 
 ## Conclusion
 

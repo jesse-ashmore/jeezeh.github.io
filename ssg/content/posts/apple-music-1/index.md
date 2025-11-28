@@ -13,10 +13,10 @@ These were the first sparks of _music curation_, a process that would enshrine i
 
 ## Discovery and curation
 
-{{ image(url="spindles.png", alt="Spindle of blank, write-once CD-Rs", no_hover=true, start=true) }}
+{{ image(url="spindles.webp", alt="Spindle of blank, write-once CD-Rs", no_hover=true, start=true) }}
 In mid-to-late childhood, I filled spindles of CDs with low-res MP3s, downloading as many as I could within my [50MB daily limit](https://web.archive.org/web/20100410163535/http://www.vodafone.ie/vlive/internetmobile), or until I ran out of patience; these were the 2G days, where a single MP3 could take upwards of 15 minutes to download.
 
-Alongside the new emotions and angst of my teenage years came access to <span class="tooltip" tabindex="0">_high-speed internet_<span class="tooltiptext">(A)DSL stuck around for a long time in Ireland. In 2012, we went from having a _very_ poor DSL line to a Wireless ISP which provided 8Mbps **symmetrical (!)** connection, which at the time was <q>faster than 87% of results in Ireland.</q>{{ image(url="wisp.png", alt="Speedtest result with Wireless ISP showing ~6Mbps upload speed", no_hover=true) }} The impact of that symmetrical connection can't be understated, and was the gateway to a whole world of YouTube uploads and live streaming that took over my life for few years.</span></span> and music streaming services like Grooveshark and Soundcloud. And finally in and in late 2012, [ _Spotify Free_ launched in Ireland](https://irishtechnews.ie/spotify-goes-live-in-ireland/).
+Alongside the new emotions and angst of my teenage years came access to <span class="tooltip" tabindex="0">_high-speed internet_<span class="tooltiptext">(A)DSL stuck around for a long time in Ireland. In 2012, we went from having a _very_ poor DSL line to a Wireless ISP which provided 8Mbps **symmetrical (!)** connection, which at the time was <q>faster than 87% of results in Ireland.</q>{{ image(url="wisp.webp", alt="Speedtest result with Wireless ISP showing ~6Mbps upload speed", no_hover=true) }} The impact of that symmetrical connection can't be understated, and was the gateway to a whole world of YouTube uploads and live streaming that took over my life for few years.</span></span> and music streaming services like Grooveshark and Soundcloud. And finally in and in late 2012, [ _Spotify Free_ launched in Ireland](https://irishtechnews.ie/spotify-goes-live-in-ireland/).
 
 Suddenly, the act of finding and acquiring music became automatic, with Spotify granting instant access to a practically infinite catalog of every genre imaginable. No longer was a single album getting weeks of airtime in my room; songs would play back-to-back, and those essential favourites of my teenage years would enter my life, [permanently shaping my attitudes, emotions, and memories around it](https://archive.is/poojo). Those favorites, and the stream of music feeding them, marked a key shift in how I participated in music as a hobby. CDs were no longer the only (or best) way to listen and organize my music.
 
@@ -29,7 +29,7 @@ After a few years of listening, though, this single list started to bend and buc
 Fast forward nearly a decade, and I still batch my songs by year, but now sort them into various categories or <span class="tooltip" tabindex="0">'tags'<span class="tooltiptext fade-in-right"><b>It's a crime that music tagging is not the default way to build music collections.</b> Imagine if you could tag a song like `favourite`, `workout`, `great bassline`, etc. and build playlists and queues based on combinations of these!</span></span>, such as by activity, emotion, instrumentation, and more.
 
 <figure>
-{{ image(url="spotify-library.png", alt="My Spotify library ca. 2025", no_hover=true) }}
+{{ image(url="spotify-library.webp", alt="My Spotify library ca. 2025", no_hover=true) }}
 <figcaption>My Spotify library, 2025</figcaption>
 </figure>
 
