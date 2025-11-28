@@ -16,17 +16,15 @@ toc = true
   mermaid.initialize({ startOnLoad: true });
 </script>
 
-{% alert(note=true) %}
+<div class="card">
 This post is part of a living documentation series I'm working on for my home network setup. The purpose is to:
 
 1. Document my network setup for myself or others to replicate
 2. Share insights, challenges, fun, and learnings along the way
 3. Practice my writing
-{% end %}
 
-**In this post, I'll be discussing my network setup**. I'll explain my current dual-router situation, adding DNS filtering with Pi-hole, and mitigating DNS hijacking with Cloudflare DNS-over-HTTPS.
-
----
+In this post, I'll be discussing my network setup. I'll explain my current dual-router situation, adding DNS filtering with Pi-hole, and mitigating DNS hijacking with Cloudflare DNS-over-HTTPS.
+</div>
 
 ## The Routers
 
@@ -83,6 +81,7 @@ A bigger concern than advertisers, though, is my ISP. While I can't hide everyth
 If you're not using the Pi-hole as a DHCP server, you will need to **enable Conditional Forwarding on the Pi-hole** to allow it to resolve client names on the network rather than seeing client IPs.
 
 You should set this to your router's CIDR range and IP, like `true,192.168.1.1/24,192.168.1.1`.
+
 </details>
 
 <details>
@@ -151,9 +150,9 @@ services:
     # ...
 ```
 
-and voila! Any devices which use Pi-hole as a DNS server are treated to DNS-over-HTTPS, no hijacking or snooping allowed:
+![The result of a DNS test performed on 1.1.1.1/help, showing DNS-over-HTTPS being successful](cf-doh.webp#no-hover#end)
 
-![The result of a DNS test performed on 1.1.1.1/help, showing DNS-over-HTTPS being successful](cf-doh.webp#no-hover)
+and there we go! Any devices which use Pi-hole as a DNS server are treated to DNS-over-HTTPS, no hijacking or snooping allowed:
 
 ## Conclusion
 
