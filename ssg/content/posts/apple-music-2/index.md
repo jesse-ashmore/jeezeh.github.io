@@ -1,5 +1,5 @@
 +++
-title = "Spotify to Apple Music — every sharp edge"
+title = "Spotify to Apple Music: every sharp edge"
 date = 2025-11-28
 external_links_target_blank = true
 [extra]

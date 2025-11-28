@@ -1,5 +1,5 @@
 +++
-title = "Spotify to Apple Music — why I listen"
+title = "Spotify to Apple Music: music curation as a hobby"
 date = 2025-11-27
 external_links_target_blank = true
 [extra]
