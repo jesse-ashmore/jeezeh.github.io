@@ -1,6 +1,6 @@
 +++
-title = "From Spotify to Apple Music — why I listen"
-date = 2025-11-25
+title = "Spotify to Apple Music — why I listen"
+date = 2025-11-27
 external_links_target_blank = true
 [extra]
 featured = true

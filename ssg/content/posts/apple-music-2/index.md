@@ -1,6 +1,6 @@
 +++
-title = "From Spotify to Apple Music — every sharp edge"
-date = 2025-11-25
+title = "Spotify to Apple Music — every sharp edge"
+date = 2025-11-28
 external_links_target_blank = true
 [extra]
 featured = true
@@ -29,7 +29,9 @@ Within a few minutes I kicked off the process to move all my playlists, and only
 
 Although it didn't copy my folder structure, it only took a few minutes to create them by hand and get back to the same point I left from with Spotify. This was a great first impression that would continue through the rest of the Android app experience. It's fast, looks gorgeous, and has most of the features I want from a portable music app.
 
-It breezes through tens of thousands of tracks in my Library without a hitch. It also has pretty good feature parity with Apple devices, sometimes **even getting new features (like AutoMix) first due to not being tied to iOS and macOS release cycles**. The only quirks I've found with the app so far are that
+It breezes through tens of thousands of tracks in my Library without a hitch. It also has pretty good feature parity with Apple devices, sometimes **even getting new features (like AutoMix) first due to not being tied to iOS and macOS release cycles**.
+
+The only quirks I've found with the app so far are that
 
 1. It really likes to remember recent screens, to the point where navigating one logical layer 'up' the component tree takes quite a few back button presses
 2. Sometimes it just... stops, either restarting itself or needing a manual force close
@@ -375,12 +377,12 @@ With this last hurdle out of the way, I finally feel like I've earned my place a
 
 ---
 
-## Technology as a hobby
+## Closing thoughts
 
-It's easy to think of all of this as just sunk-cost. <q>Why not just go back to Spotify, a world where this post didn't even need to exist?</q> As much as I'd like to wax poetic about technology being an art form—which I really think it is—I admit that in many cases, technology is a means to an end. So when something doesn't work the way I think it ought to, it frustrates me. When a piece of software complains about incompatibility, or I find myself squeezed into a forgotten or _unprofitable_ edge case, I can't rest until I find a workaround.
+As much as I'd like to wax poetic about technology being an art form—which I really think it is—I admit that in many cases, technology is mostly a means to an end. So when something doesn't work the way I think it ought to, it frustrates me. When a piece of software complains about incompatibility, or I'm squeezed into a forgotten or _unprofitable_ edge case, I can't rest until I find a workaround.
 
-Technology, like music, is often a labour of passion, discovery, and excitement for me. That's a lot of emotion to process internally, and friends and family were becoming numb to my constant ramblings about _Airplay_, _The Library_, and _Docker_; I needed an outlet without ears or need of patience. At the same time, I didn't want my learnings to be forgotten.
+That kind of obsession comes with the cost of peace and relaxation, but not just for me. Friends and family were becoming numb to my constant ramblings about _Airplay_, _The Library_, and _Docker_; I needed an outlet without ears or need of patience. At the same time, I didn't want my learnings to be forgotten. This post quickly grew from a bulleted list of my findings into a more detailed troubleshooting guide, the introduction evolved into a longer reflection piece, and eventually both were published as two separate posts of their own right.
 
-This post quickly grew from a bulleted list of my findings into a more detailed troubleshooting guide, the introduction evolved into a longer reflection piece, and eventually both were published as two separate posts of their own right. **Ironically, it's taken me _far_ longer to write this than I spent fighting with Apple Music in the first place**, but I've gained something more than an overly-complicated listening setup.
+It's easy to think of all of this as just sunk-cost. <q>Why not just go back to Spotify, a world where this post didn't even need to exist?</q> **Ironically, it's taken me _far_ longer to write this than I spent fighting with Apple Music in the first place**, but I've gained something more than an overly-complicated listening setup. When it comes to music, sometimes I want a more _analogue_ experience, sometimes I look to technology to overcome the physical limits of my environment or tools. With each swing of the pendulum, I explore new processes and develop new preferences, and my passion for music and technology grows ever deeper.
 
-No matter the topic, I always learn something new about myself through writing. Music and technology are deeply intertwined in my life, the nature of their relationship changing over time as my own priorities and environment have changed. When it comes to music, sometimes I want a more _analogue_ experience, sometimes I look to technology to overcome the physical limits of my environment or tools. With each swing of the pendulum, I explore new processes and develop new preferences, but my passion for music—and technology—only grows.
+For me, these kinds of realizations only become clearer through acts of deeper introspection like writing.
