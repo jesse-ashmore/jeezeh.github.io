@@ -10,15 +10,13 @@ toc = true
 <div class="card">
 This is the second entry in a duology of posts covering my move from Spotify to Apple Music.
 
-[In the previous entry](/posts/apple-music-1), I detailed my process for music discovery and curation and reflect on what music as a hobby means to me.
-
-Here, I cover my journey of onboarding and adapting to Apple Music as a primarily non-Apple user. This entry is less reflective than the first, and serves as both documentation and a trouble-shooting guide for future users in a similar boat. **This will get technical.**
+[In the previous entry](/posts/apple-music-1), I detailed my process for music discovery and curation and reflect on what music as a hobby means to me. Here, I cover my journey of onboarding and adapting to Apple Music as a primarily non-Apple user. This entry serves as both documentation and a trouble-shooting guide for future users in a similar boat. **This will get technical.**
 
 </div>
 
 ---
 
-Apple (like Qobuz) is generous enough to provide free access to [SongShift](https://www.songshift.com/) for users moving their music from other platforms to Apple Music.
+Apple (like Qobuz) is generous enough to provide free access to [SongShift](https://www.songshift.com/) for users moving their music from other platforms to Apple Music (AM).
 
 <aside>
 <figure>
@@ -27,24 +25,24 @@ Apple (like Qobuz) is generous enough to provide free access to [SongShift](http
 </figure>
 </aside>
 
-Within a few minutes I kicked off the process to move all my playlists, and only an hour or so later it had completed. Given some playlists had thousands of songs, the speed and accuracy of the migration was impressive, playlists with hundreds of songs were only missing a one or two. Factoring in some artists who recently pulled their music from Spotify, I wouldn't be surprised if I actually _(re-)gained_ music during the process.
+Within a few minutes I kicked off the process to move all my playlists, and only an hour or so later it had completed. Given some playlists had thousands of songs, the speed and accuracy of the migration was impressive; playlists with hundreds of songs were only missing a one or two. Factoring in some artists who recently pulled their music from Spotify, I wouldn't be surprised if I actually _(re-)gained_ music during the process.
 
 Although it didn't copy my folder structure, it only took a few minutes to create them by hand and get back to the same point I left from with Spotify. This was a great first impression that would continue through the rest of the Android app experience. It's fast, looks gorgeous, and has most of the features I want from a portable music app.
 
-It breezes through tens of thousands of tracks in my Library without a hitch. It also has pretty good feature parity with Apple devices, sometimes even getting new features like AutoMix first due to not being tied to iOS and macOS release cycles. The only quirks I've found with the app so far are that
+It breezes through tens of thousands of tracks in my Library without a hitch. It also has pretty good feature parity with Apple devices, sometimes **even getting new features (like AutoMix) first due to not being tied to iOS and macOS release cycles**. The only quirks I've found with the app so far are that
 
 1. It really likes to remember recent screens, to the point where navigating one logical layer 'up' the component tree takes quite a few back button presses
 2. Sometimes it just... stops, either restarting itself or needing a manual force close
 
-Overall, it's surprisingly solid experience given it's an Apple product on Android. It even supports streaming (without needing to download) any music you might own and bring along to the platform.
+Overall, it's surprisingly solid experience given it's an Apple product on Android. It even supports streaming music you own and upload to AM, without needing to download it first.
 
 ## Bring your own music
 
-> I miss Google Play Music, but this is maybe the next best thing.=
+> I miss Google Play Music, but this is _maybe_ the next best thing.
 
-Apple Music's roots in iTunes and their focus on music ownership serves users with existing digital collections very well. From any desktop device (Windows or Mac), you can upload local files to your Apple Music account and have these available in your Library to stream anywhere. This is an excellent answer to Spotify's somewhat lackluster 'Local Files' feature, which is an opt-in feature and requires at least one computer to have a copy of the files on the same network for others to sync from.
+AM's roots in iTunes and their focus on music ownership serves users with existing digital collections very well. From any desktop device (Windows or Mac), you can upload local files to your AM account and have these available in your Library to stream anywhere. This is an excellent answer to Spotify's somewhat lackluster 'Local Files' feature, which is an opt-in feature and requires at least one computer to have a copy of the files on the same network for others to sync from.
 
-Unfortunately, the import process for Apple Music isn't perfect either.
+Unfortunately, the import process for AM isn't perfect either.
 
 ### Alac of supported formats
 
@@ -57,7 +55,7 @@ Once converted, importing was as simple as going to `Library > Import > Upload f
 <details>
 <summary>Aside: OneDrive and Apple Music conflicts</summary>
 
-On Windows, Apple Music uses your local user's _Music_ folder (`%UserProfile%\Music`) to store library data, cache, downloaded tracks, and imported music (if you choose to copy imported files). There's a handy option in the settings which allows you to change this:
+On Windows, AM uses your local user's _Music_ folder (`%UserProfile%\Music`) to store library data, cache, downloaded tracks, and imported music (if you choose to copy imported files). There's a handy option in the settings which allows you to change this:
 
 <figure>
 {{ image(url="windows-music-folder.png", alt="An option allowing users to control where Apple stores its library and other data", no_hover=true)}}
@@ -69,9 +67,9 @@ On Windows, Apple Music uses your local user's _Music_ folder (`%UserProfile%\Mu
 While _some_ data respects this location, such as imports and underlying library files, the app still seems to keep other types of data in `%UserProfile%\Music`. From what I can tell, it creates directories and files like metadata and artwork _for every song you play_. This quickly adds up to a huge number of files, which is a problem if you keep your Music library synced in OneDrive, which many users will do by-default these days.
 
 {% alert(tip=true) %}
-You _could_ manipulate the default location through editing some config or registry files, but I decided to bite the bullet and just **move my actual Music data to a separate OneDrive folder, and turned off OneDrive backup for `%UserProfile%\Music`**. Apple Music still creates metadata files, but does so outside of OneDrive. This comes with the minor added benefit that, as long as you have enough storage space, you can also enable the setting to copy files on import, just to make sure there are no links back to source media.
+You _could_ manipulate the default location through editing some config or registry files, but I decided to bite the bullet and just **move my actual Music data to a separate OneDrive folder, and turned off OneDrive backup for `%UserProfile%\Music`**. AM still creates metadata files, but does so outside of OneDrive. This comes with the minor added benefit that, as long as you have enough storage space, you can also enable the setting to copy files on import, just to make sure there are no links back to source media.
 
-This is one of many behavioural changes that Apple Music will ask of its users that do not follow the yellow brick road of Cupertino.
+This is one of many behavioural changes that AM will ask of its users that do not follow the yellow brick road of Cupertino.
 {% end %}
 
 </details>
@@ -86,7 +84,7 @@ After importing my playlists and uploading my local music, I discovered two stra
 <aside>
 <figure>
 {{ image(url="apple-missing-songs.png", alt="An album in Apple Music with missing songs", no_hover=true)}}
-<figcaption>Missing uploads</figcaption>
+<figcaption>Missing tracks from an uploaded album</figcaption>
 </figure>
 </aside>
 It seems with a large enough collection, the app will lose track (hah!) of certain songs during the upload/matching process, leaving you with partial albums. After several attempts to re-upload the collection and even the missing songs individually, I couldn't get them to appear in my library.
@@ -107,7 +105,7 @@ A few days later, I opened my Starred 2025 playlist as usual. To my horror, all 
 <figcaption>Toggles to control 'Add to library' features</figcaption>
 </figure>
 </aside>
-Coming from Spotify, it's easy to assume the _library_ is just an arbitrary list of songs you might have "Liked" or added to playlists in the past. In fact, in Apple Music, there are settings to make it behave the same way:
+Coming from Spotify, it's easy to assume the _library_ is just an arbitrary list of songs you might have "Liked" or added to playlists in the past. In fact, in AM, there are settings to make it behave the same way:
 
 {% alert(caution=true,text="hello") %}
 The Library is _**not**_ just some arbitrary list.
@@ -135,9 +133,9 @@ Playlist-by-playlist I repeated the ritual:
 This took a bit longer than expected.
 
 {% alert(tip=true) %}
-For whatever reason, it takes a second or so for each song to be added to the library, meaning it was going to take a while to backfill the 10K+ songs I brought over from Spotify. I only tried this on Apple Music for Mac, mind you.
+For whatever reason, it takes a second or so for each song to be added to the library, meaning it was going to take a while to backfill the 10K+ songs I brought over from Spotify. I only tried this on AM for Mac, mind you.
 
-Plugged in, I ran `caffeinate -s -u` to keep it awake (and the user active), and left Apple Music in focus to work away. I tried with various individual flags, but only a combination of these and keeping the Apple Music window in focus worked. **I didn't try this on Windows**.
+Plugged in, I ran `caffeinate -s -u` to keep it awake (and the user active), and left AM in focus to work away. I tried with various individual flags, but only a combination of these and keeping the AM window in focus worked. **I didn't try this on Windows**.
 {% end %}
 
 Now that I have all my music added to the Library, it's time to start listening and teach my _Apple Music Genius_ a thing or two. Soon it'll build up a profile for me, I'll start getting some good recommendations, and then I'll have my Spotify Wrapped—... _Oh, God!_ My Spotify Wrapped! My analytics!
@@ -146,9 +144,9 @@ Now that I have all my music added to the Library, it's time to start listening 
 
 The idea of music analytics has excited me since the first Spotify Wrapped, and I've made sure that since 2016 or so, all of my listening would be [tracked on Last.fm](https://www.last.fm/user/JesseAshmore/). This turned out to be great foresight, now I really _could_ preserve my music listening history from Spotify.
 
-But of course, Apple Music has **no support for third-party integrations with Last.fm,** meaning any new _Scrobbles (sigh)_ would be Apple's knowledge alone.
+But of course, AM has **no support for third-party integrations with Last.fm**, meaning any new <span class="tooltip" tabindex="0">_scrobbles_<span class="tooltiptext">A scrobble is a single play of a song, tracked on Last.fm.<br/><br/>At least it's a memorable name.</span></span> would be Apple's knowledge alone.
 
-I briefly went down a bit of rabbit hole seeing if was possible to import my Last.fm or Spotify listening data directly into Apple Music—at least that way I could continue where I left off—but as of 2025, <span class="tooltip" tabindex="0">it's not possible.<span class="tooltiptext">Apple Music stores its Library locally in an [encrypted **and** compressed format called `musicdb`](https://home.vollink.com/gary/playlister/musicdb.html). This is a proprietary format which has not yet been cracked.</span></span>
+I briefly went down a bit of rabbit hole seeing if was possible to import my Last.fm or Spotify listening data directly into AM—at least that way I could continue where I left off—but as of 2025, <span class="tooltip" tabindex="0">it's not possible.<span class="tooltiptext">AM stores its Library locally in an [encrypted **and** compressed format called `musicdb`](https://home.vollink.com/gary/playlister/musicdb.html). This is a proprietary format which has not yet been cracked, meaning there's no real way to backfill listening history data.</span></span>
 
 {% alert(tip=true) %}
 To scrobble my plays on Apple Music, I use a combination of apps across devices:
@@ -160,13 +158,13 @@ To scrobble my plays on Apple Music, I use a combination of apps across devices:
 
 {% end %}
 
-I'm not happy about needing more third party apps, but these kinds of workarounds would continue to be part and parcel of the Apple Music listening experience.
+I'm not happy about needing more third party apps, but I'm grateful community solutions exist to fill the gaps that Apple has yet to. This would continue to be a general pattern during my migration, especially as I tried to replicate my previous listening setup.
 
 ## The listening experience
 
 I have a fairly broad ecosystem of devices, and being an Apple service, I was right not to be particularly optimistic about what lay ahead. While I've had no _general_ issues with song playback—the most basic function for a music app, to be fair—each device has come with its own challenges.
 
-The first thing I noticed was that Apple Music has **no equivalent to Spotify Connect**.
+The first hurdle I faced during general listening was that Apple Music has **no equivalent to Spotify Connect**.
 
 ### Regaining (remote) control
 
@@ -176,7 +174,7 @@ If you want to control music playback remotely, your (official) options are:
 - Apple: Airplay 1 or 2 (from Apple Music or System)
 - Windows: Airplay 1 only (from Apple Music)
 
-Of course, you can also use Bluetooth, but note that Bluetooth playback from Apple devices is [limited to 256Kbps AAC](https://support.apple.com/en-ie/118295).
+But these are not truly remote control methods, it's just casting. Of course, you can also 'cast' over Bluetooth to any equipped receivers, but do note that Bluetooth playback from Apple devices at least is [limited to 256Kbps AAC](https://support.apple.com/en-ie/118295). On Android, the situation with lossless audio is [more complicated](https://www.androidauthority.com/android-audiophile-guide-3611225/).
 
 This is all just a bit mad. Every device seems to have its own specific support and limitations for casting audio, the strangest one being that Windows even supports Airplay at all! But I don't have a Homepod with Airplay, and I don't want to have to turn my TV on to stream music. So what are my _other_ options?
 
@@ -242,18 +240,20 @@ If using ALSA,you'll want to run `aplay -L` and/or `aplay -l` to identify which 
 
 **But is it lossless?** As far as I can tell, [Shairport Sync should support lossless streaming](https://github.com/mikebrady/shairport-sync/issues/1205), but from some very basic network-watching it looks like devices using Airplay are transmitting at about 800-1000Kbps. This is theoretically better than the 256Kbps AAC stream at least, but I need to do some proper bit-perfect comparisons to see to if what it actually plays back looks correct.
 
+**Do I really need lossless?** Not really. I can't reliably pass a [lossless quality blind test](https://www.npr.org/sections/therecord/2015/06/02/411473508/how-well-can-you-hear-audio-quality), so the most tangible difference is more bandwidth and storage usage. **But**, there is a peace of mind for me in knowing that what I'm sending through my system is as unaltered from source as possible—before I make [my own alterations](https://www.minidsp.com/applications/digital-room-correction/drc-basics), of course.
+
 In any case, the casting experience from Mac works as-expected, and even works well with Windows (if you're willing to use Airplay 2).
 
 #### Casting from Windows
 
-As mentioned, Airplay 2 isn't supported from the Apple Music on Windows (AMW) app, but with Docker you can easily run two instances of Shairport Sync.
+Unfortunately, after setting up Shairport Sync, I discovered that the Windows AM app does **not** support Airplay 2 for some reason.
 
 <figure>
 {{ image(url="windows-airplay-2.png", alt="Incompatibility between Apple Music on Windows and Airplay 2 devices", no_hover=true) }}
 <figcaption>AMW playback error with Airplay 2</figcaption>
 </figure>
 
-Obviously, you could just run a single Airplay 1 instance and call it a day, but where's the fun in that?
+Obviously, you could just run a single Airplay 1 instance (`mikebrady/shairport-sync:classic`) instead and call it a day, but where's the fun in that?
 
 <details>
 <summary>Running Airplay 1 and 2 so that I can stream from Windows</summary>
@@ -310,21 +310,26 @@ Now, Airplay 1 and 2 both available on my network:
 
 #### Casting from Android
 
-You may not be surprised to note that Android has no support Airplay natively. This is only a bit of a problem, though, since a few apps out there claim to support casting to Airplay devices. In my experience, I found just one to work reliably.
+It's not a huge surprise that the Android AM app doesn't support Airplay natively, but given the support in the Windows app, it would be great if Apple gave the option to integrate with _their own ecosystem_. This means that, once again, we need to reach for community solutions.
+
+A few apps out there claim to support casting to Airplay devices, but un my experience, I found just one to work reliably.
 
 {% alert(tip=true) %}
-[AirMusic](https://www.airmusic.app/) for Android
+[AirMusic](https://www.airmusic.app/) for Android comes in two variants:
 
-This handy app comes in two variants, a free trial to make sure it all works with your setup first, and a paid pro version. I can happily report that this app supports casting audio from Apple Music over Airplay 1 or 2.
+1. A free trial to make sure it all works with your setup first
+2. A paid pro version.
+
+I can happily report that this app supports casting audio from Apple Music over Airplay 1 or 2, pretty flawlessly too!
 
 You might want to configure some settings around auto-disconnect, buffer, and volume controls for the best experience. I did also need to **disable battery optimization** for both apps, as Samsung likes to kill background processes aggressively.
 {% end %}
 
-It's surprising that Apple even allow audio casting/capture from their Android app, as many other services including Spotify don't, but I'm not going to complain about it. Instead, I'm going to complain about the other DRM Apple uses.
+It's surprising that Apple even allow audio capture from their Android app in the first place, as many other services (including Spotify) do not. But I'm not going to complain about it. Instead, I'm going to complain about the other DRM Apple uses.
 
 ### FairPlay vs ShadowPlay
 
-A week into my experience with Apple Music, I was feeling conflicted. I was loving the Apple Music app and music experience, but I'd invested a **significant** amount of time into figuring out all the quirks with the library, importing my music, and finding workarounds and alternatives to Last.fm and Spotify Connect. Tired from a week of debugging, I booted up Battlefield 6 to unwind, put on my favourite playlist, and was greeted with another test of strength:
+A week into my experience with Apple Music, I was feeling conflicted. I was loving the AM app and music experience, but I'd invested a **significant** amount of time into figuring out all the quirks with the library, importing my music, and finding workarounds and alternatives to Last.fm and Spotify Connect. Tired from a week of debugging, I booted up Battlefield 6 to unwind, put on my favourite playlist, and was greeted with another test of my resolve:
 
 <figure>
 {{ image(url="fairplay.png", alt="Nvidia ShadowPlay popup about disabled desktop recording", no_hover=true) }}
@@ -337,9 +342,9 @@ Nvidia ShadowPlay does not allow recording while Apple Music is playing.
 
 Brilliant.
 
-The issue stems from [Apple FairPlay](https://en.wikipedia.org/wiki/FairPlay), a DRM system to protect Apple's various media playback methods. It seems that Apple Music uses FairPlay, which Nvidia does its best to respect by completely disabling recording when music playback is active.
+The issue stems from [Apple FairPlay](https://en.wikipedia.org/wiki/FairPlay), a DRM system to protect Apple's various media playback methods. It seems that AM uses FairPlay, which Nvidia does its best to respect by completely disabling recording when music playback is active.
 
-It should go without saying that this is an awful way to respond to FairPlay content. Not only because Spotify doesn't have this issue. Not only because I can still record FairPlay content if I wish, even using Nvidia's NVENC encoder, in OBS. But also because it is lazy, and prevents me from using my hardware and software to do something very normal: listen to music while playing games and recording footage for personal use.
+It should go without saying that **this is an awful way for Nvidia's ShadowPlay to react to FairPlay content**. It is a lazy, bureaucratic Not only because Spotify _doesn't_ have this issue. Not only because I can still record FairPlay content with OBS if I really wanted, even using Nvidia's NVENC encoder. But also because it is lazy, and prevents me from using my hardware and software to do something very normal: listen to music while playing games and recording footage for personal use.
 
 This one seemed like it might be a dead end, but I _suspect_ there are some cheeky workarounds to be found here:
 
@@ -349,10 +354,10 @@ This one seemed like it might be a dead end, but I _suspect_ there are some chee
 
 Rather that adding more layers of misdirection in my setup, I figured the easiest thing was to remove Nvidia from the equation entirely.
 
-I've always had issues with Shadowplay turning off, and generally find its overlay clunky and bloated. The main benefit of Shadowplay for me is that it provides (1) an easy background recording (2) using the efficient NVENC encoder built into the GPU. But you don't necessarily need Shadowplay to achieve either of these!
+I've always had issues with ShadowPlay turning off, and generally find its overlay clunky and bloated. I've continued using it for so long because it (1) provides an easy solution to record everything I play automatically in the background (2) using the efficient NVENC encoder built into the GPU which avoids much of the performance impact from software-based encoders. But you don't necessarily need ShadowPlay to achieve either of these.
 
 {% alert(tip=true) %}
-Use OBS to record your gameplay using NVENC encoder and the replay buffer [to mimic ShadowPlay's Instant Replay feature](https://github.com/matthewp0/OBS-Alternative-to-Shadowplay). This proved to be by far the simplest solution, and in the end, I think I prefer it over Shadowplay!
+Use [OBS](https://obsproject.com/) to record your gameplay using NVENC encoder and the replay buffer [to mimic ShadowPlay's Instant Replay feature](https://github.com/matthewp0/OBS-Alternative-to-Shadowplay). This proved to be by far the simplest solution, and in the end, I think I even prefer it over ShadowPlay.
 
 For equivalent behavior, you'll want to setup your default scene to record any active game window, configure hotkeys and quality settings, and start OBS automatically with a Task Scheduler entry:
 
@@ -366,16 +371,16 @@ For equivalent behavior, you'll want to setup your default scene to record any a
 
 {% end %}
 
-With this last hurdle out of the way, I finally feel like I've earned my place as a non-Apple native in the Apple Music ecosystem.
+With this last hurdle out of the way, I finally feel like I've earned my place as a non-Apple native in the Apple Music ecosystem. And since writing this post, I haven't encountered any more major issues with AM. Yet.
 
 ---
 
 ## Technology as a hobby
 
-It's easy to think of all of this as just sunk-cost. <q>Why not just go back to Spotify, a world where this post didn't even need to exist?</q>
+It's easy to think of all of this as just sunk-cost. <q>Why not just go back to Spotify, a world where this post didn't even need to exist?</q> As much as I'd like to wax poetic about technology being an art form—which I really think it is—I admit that in many cases, technology is a means to an end. So when something doesn't work the way I think it ought to, it frustrates me. When a piece of software complains about incompatibility, or I find myself squeezed into a forgotten or _unprofitable_ edge case, I can't rest until I find a workaround.
 
-As much as I'd like to wax poetic about technology being an art form, much of it is purely practical. So when something doesn't work the way I think it ought to, it frustrates me. When a piece of software complains about incompatibility, or I find myself squeezed into a forgotten _or unprofitable_ edge case, I can't rest until I find a workaround.
+Technology, like music, is often a labour of passion, discovery, and excitement for me. That's a lot of emotion to process internally, and friends and family were becoming numb to my constant ramblings about _Airplay_, _The Library_, and _Docker_; I needed an outlet without ears or need of patience. At the same time, I didn't want my learnings to be forgotten.
 
-Like music, technology is often a labour of passion, discovery, and excitement. That's a lot of emotion to process internally, and friends and family were becoming numb to my constant ramblings about _Airplay_, _The Library_, and _Docker_; I needed an outlet without ears or need of patience. At the same time, I didn't want my learnings to be forgotten, so I started working on this _short_ post about my findings.
+This post quickly grew from a bulleted list of my findings into a more detailed troubleshooting guide, the introduction evolved into a longer reflection piece, and eventually both were published as two separate posts of their own right. **Ironically, it's taken me _far_ longer to write this than I spent fighting with Apple Music in the first place**, but I've gained something more than an overly-complicated listening setup.
 
-It quickly grew from a bulleted list into a troubleshooting guide, the introduction evolved into a longer reflection piece, and eventually both were published as two separate posts of their own right. **Ironically, it's taken me _far_ longer to write this than I spent fighting with Apple Music in the first place**, but I've gained something more than an overly-complicated listening setup. No matter the topic, I always feel like I learn a bit more about myself through writing, and I've come to realise—now more than ever—just how big a role music and technology play in my life.
+No matter the topic, I always learn something new about myself through writing. Music and technology are deeply intertwined in my life, the nature of their relationship changing over time as my own priorities and environment have changed. When it comes to music, sometimes I want a more _analogue_ experience, sometimes I look to technology to overcome the physical limits of my environment or tools. With each swing of the pendulum, I explore new processes and develop new preferences, but my passion for music—and technology—only grows.
