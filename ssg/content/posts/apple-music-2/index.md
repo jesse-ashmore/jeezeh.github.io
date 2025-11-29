@@ -237,7 +237,7 @@ My home server is permanently connected to my audio system for streaming, this m
 
 Shairport Sync provides an example [Docker Compose](https://github.com/mikebrady/shairport-sync/blob/3c8ceb7c97c8782903ec48e280023436711e0913/docker/docker-compose.yaml) snippet, making setting up an Airplay 2 container super simple.
 
-If using ALSA,you'll want to run `aplay -L` and/or `aplay -l` to identify which device to output sound to. In my case, `hw: 1` is the MiniDSP Flex. You can specify the device either through a configuration file, or directly in the Docker Compose service with `command: -- -d hw:1`.
+If using ALSA, you'll want to run `aplay -L` and/or `aplay -l` to identify which device to output sound to. In my case, `hw: 1` is the MiniDSP Flex. You can specify the device either through a configuration file, or directly in the Docker Compose service with `command: -- -d hw:1`.
 {% end %}
 
 **But is it lossless?** As far as I can tell, [Shairport Sync should support lossless streaming](https://github.com/mikebrady/shairport-sync/issues/1205), but from some very basic network-watching it looks like devices using Airplay are transmitting at about 800-1000Kbps. This is theoretically better than the 256Kbps AAC stream at least, but I need to do some proper bit-perfect comparisons to see to if what it actually plays back looks correct.
@@ -306,7 +306,7 @@ Now, Airplay 1 and 2 both available on my network:
 
 <figure>
 {{ image(url="windows-airplay-both.webp", alt="Airplay 1 and 2 both available on my network", no_hover=true) }}
-<figurecaption>Both Airplay 1 and 2 devices visible in AMW, only Airplay 1 works, though.</figurecaption>
+<figcaption>Both Airplay 1 and 2 devices visible in AMW, only Airplay 1 works, though.</figcaption>
 </figure>
 </details>
 
